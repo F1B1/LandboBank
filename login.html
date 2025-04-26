@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en" class="page">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script defer src="script.js"></script>
+</head>
+<body class="page__body">
+    <h1 class="visually-hidden">Логин</h1>
+    <div class="site-container">
+        <header class="header">
+            <div class="header__container container">
+                <div class="header__top-mobile">
+                    <a href="#" class="header__logo">
+                        <img src="img/logo.svg" alt="img" width="143" heigth="24" loading="lazy">
+                    </a>
+                    <button type="button" class="menu__icon icon-menu btn-reset" aria-label="menu"><span></span></button>
+                </div>
+                <div class="header__wrapper">
+                    <div class="header__inner">
+                        <a href="#" class="header__logo">
+                            <img src="img/logo.svg" alt="img" width="143" heigth="24" loading="lazy">
+                        </a>
+                        <nav class="header__menu">
+                            <ul class="header__list list-reset">
+                                <li class="header__item"><a href="#" class="header__link">About company</a></li>
+                                <li class="header__item"><a href="#" class="header__link">Popular services</a></li>
+                                <li class="header__item"><a href="#" class="header__link">Business</a></li>
+                            </ul>
+                        </nav>
+                        <div class="header__block">
+                            <ul class="header__list header__list-language list-reset">
+                                <li class="header__item-language">
+                                    <a href="#" class="header__link-language">
+                                        <img src="img/en.svg" alt="img" width="21" heigth="15" loading="lazy">
+                                    </a>    
+                                    <img class="header__arrow" src="img/arrow.svg" alt="img" width="12" heigth="12" loading="lazy">
+                                    <ul class="header__sub-menu list-reset">
+                                        <li class="header__sub-item"><a href="#" class="header__sub-link">
+                                            <img src="img/en.svg" alt="img" width="21" heigth="15" loading="lazy">
+                                        </a></li>
+                                        <li class="header__sub-item"><a href="#" class="header__sub-link">
+                                            <img src="img/en.svg" alt="img" width="21" heigth="15" loading="lazy">
+                                        </a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <div class="header__buttons">
+                                <a href="#" class="header__button header__button-open btn btn-reset">Open an account</a>
+                                <a href="#" class="header__button header__button-login btn btn-reset">Log in</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main class="main">
+            <section class="login section-first">
+                <div class="login__container container">
+                    <h2 class="login__title">Login to account</h2>
+                    <form action="#" class="login__form form">
+                        <label class="form__input input">
+                            <input type="text" name="login" id="login" placeholder="Login" required>
+                        </label>
+                        <label class="form__input input">
+                            <input type="password" name="password" id="password" placeholder="Password" required>
+                        </label>
+                        <p class="form__text">Forgot your password?</p>
+                        <button type="submit" class="form__button btn btn-reset">Log in</button>
+                    </form>
+                </div>
+            </section>
+        </main>
+    </div>
+
+</body>
+</html>
