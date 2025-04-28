@@ -44,7 +44,7 @@
                         </a>
                       </li>
                       <li class="sidebar__item">
-                        <a href="#" class="sidebar__link">
+                        <a href="#" class="sidebar__link active">
                           <img src="img/wallte-time.svg" alt="img" width="24" height="24" loading="lazy">
                           <span data-i18n="sidebar.lendingServices">Lending services</span>
                         </a>
@@ -56,7 +56,7 @@
                         </a>
                       </li>
                       <li class="sidebar__item">
-                        <a href="#" class="sidebar__link active">
+                        <a href="#" class="sidebar__link">
                           <img src="img/convert.svg" alt="img" width="24" height="24" loading="lazy">
                           <span data-i18n="sidebar.currencyConversion">Currency convertation</span>
                         </a>
@@ -205,7 +205,7 @@
                 <section class="content">
                     <div class="content__container">
                       <div class="content__alert">
-                        <p data-i18n="alert.message">
+                        <p data-i18n="alert.text">
                           Dear customers of the bank! At the moment, the callback order is available only to residents of the European Union. In other cases, customer service is provided via online chat in the bank's personal account.
                         </p>
                         <div class="content__alert-close">
@@ -214,28 +214,19 @@
                       </div>
                   
                       <div class="content__body">
-                        <h2 class="content__title">
-                          <img src="img/converter.svg" alt="img" width="38" height="38" loading="lazy">
-                          <span data-i18n="title.currencyConvertation">Currency convertation</span>
+                        <h2 class="content__title" data-i18n="content.title">
+                          <img src="img/lending.svg" alt="img" width="38" height="38" loading="lazy">
+                          Lending services
                         </h2>
                   
-                        <form action="#" class="content__converter conten__form">
-                          <label class="content__converter-input input">
-                            <input type="number" name="from" id="from" placeholder="0" required>
-                            <img src="img/ruble.svg" alt="img" width="12" height="12" loading="lazy">
-                            <img src="img/arrow.svg" alt="img" width="8" height="8" loading="lazy">
-                          </label>
-                  
-                          <div class="content__agreement">
-                            <label class="content__converter-input input">
-                              <input type="number" name="to" id="to" placeholder="0" required>
-                              <img src="img/usdt.svg" alt="img" width="12" height="12" loading="lazy">
-                              <img src="img/arrow.svg" alt="img" width="8" height="8" loading="lazy">
-                            </label>
+                        <div class="content__pending">
+                          <div class="content__pending-icon">
+                            <img src="img/clock.svg" alt="img" width="48" height="48" loading="lazy">
                           </div>
-                  
-                          <button type="submit" class="content__submit btn btn-reset" data-i18n="button.convert">Convert</button>
-                        </form>
+                          <p class="content__pending-text" data-i18n="content.pendingText">
+                            Your loan application is pending, resubmission submission of the application will be available after consideration of the current application
+                          </p>
+                        </div>
                       </div>
                     </div>
                   </section>

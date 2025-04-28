@@ -43,8 +43,8 @@
                           <span data-i18n="sidebar.myFinance">My finance</span>
                         </a>
                       </li>
-                      <li class="sidebar__item">
-                        <a href="#" class="sidebar__link">
+                      <li class="sidebar__item active">
+                        <a href="#" class="sidebar__link active">
                           <img src="img/wallte-time.svg" alt="img" width="24" height="24" loading="lazy">
                           <span data-i18n="sidebar.lendingServices">Lending services</span>
                         </a>
@@ -56,7 +56,7 @@
                         </a>
                       </li>
                       <li class="sidebar__item">
-                        <a href="#" class="sidebar__link active">
+                        <a href="#" class="sidebar__link">
                           <img src="img/convert.svg" alt="img" width="24" height="24" loading="lazy">
                           <span data-i18n="sidebar.currencyConversion">Currency convertation</span>
                         </a>
@@ -202,121 +202,155 @@
                 </div>
               </aside>
             <main class="main">
-                <section class="content">
-                    <div class="content__container">
-                      <div class="content__alert">
-                        <p data-i18n="alert.message">
-                          Dear customers of the bank! At the moment, the callback order is available only to residents of the European Union. In other cases, customer service is provided via online chat in the bank's personal account.
-                        </p>
-                        <div class="content__alert-close">
-                          <img src="img/close.svg" alt="img" width="14" height="14" loading="lazy">
-                        </div>
-                      </div>
-                  
-                      <div class="content__body">
-                        <h2 class="content__title">
-                          <img src="img/converter.svg" alt="img" width="38" height="38" loading="lazy">
-                          <span data-i18n="title.currencyConvertation">Currency convertation</span>
-                        </h2>
-                  
-                        <form action="#" class="content__converter conten__form">
-                          <label class="content__converter-input input">
-                            <input type="number" name="from" id="from" placeholder="0" required>
-                            <img src="img/ruble.svg" alt="img" width="12" height="12" loading="lazy">
-                            <img src="img/arrow.svg" alt="img" width="8" height="8" loading="lazy">
-                          </label>
-                  
-                          <div class="content__agreement">
-                            <label class="content__converter-input input">
-                              <input type="number" name="to" id="to" placeholder="0" required>
-                              <img src="img/usdt.svg" alt="img" width="12" height="12" loading="lazy">
-                              <img src="img/arrow.svg" alt="img" width="8" height="8" loading="lazy">
-                            </label>
-                          </div>
-                  
-                          <button type="submit" class="content__submit btn btn-reset" data-i18n="button.convert">Convert</button>
-                        </form>
-                      </div>
+              <section class="content">
+                <div class="content__container">
+                  <div class="content__alert">
+                    <p data-i18n="alert.text">
+                      Dear customers of the bank! At the moment, the callback order is available only to residents of the European Union. In other cases, customer service is provided via online chat in the bank's personal account.
+                    </p>
+                    <div class="content__alert-close">
+                      <img src="img/close.svg" alt="img" width="14" height="14" loading="lazy">
                     </div>
-                  </section>
-                  
-                <aside class="info">
-                    <div class="info__container">
-                      <div class="content__alert">
-                        <p data-i18n="info.alertMessage">Dear customers of the bank! At the moment, the callback order is available only to residents of the European Union. In other cases, customer service is provided via online chat in the bank's personal account.</p>
-                        <div class="content__alert-close">
-                          <img src="img/close.svg" alt="Close" width="14" height="14" loading="lazy">
-                        </div>
+                  </div>
+                  <div class="content__body">
+                    <h2 class="content__title" data-i18n="content.title">
+                      <img src="img/lending.svg" alt="img" width="38" height="38" loading="lazy"> Lending services
+                    </h2>
+              
+                    <div class="content__slider">
+                      <label class="slider-label slider-label-big">
+                        <h3 class="slider-title" data-i18n="slider.loanAmountTitle">Desired loan amount</h3>
+                        <div class="slider-value" id="rublesValue">50000</div>
+                        <input type="range" id="rublesSlider" min="0" max="2000000" step="1000" value="50000">
+                        <p class="slider-text" data-i18n="slider.currency">rub.</p>
+                      </label>
+              
+                      <label class="slider-label">
+                        <h3 class="slider-title" data-i18n="slider.termTitle">Credit term</h3>
+                        <div class="slider-value" id="monthsValue">12</div>
+                        <input type="range" id="monthsSlider" min="1" max="36" step="1" value="3">
+                        <p class="slider-text" data-i18n="slider.month">month.</p>
+                      </label>
+              
+                      <label class="slider-label">
+                        <h3 class="slider-title" data-i18n="slider.monthlyPaymentTitle">Monthly payment</h3>
+                        <div class="slider-sum">846 <span>₽</span></div>
+                      </label>
+                    </div>
+              
+                    <form action="#" class="content__form content__card">
+                      <h3 class="content__subtitle" data-i18n="form.contactInfoTitle">Contact Information</h3>
+              
+                      <div class="content__inputs">
+                        <label class="content__input content__input-name input">
+                          <input type="text" name="full" id="fill" placeholder="Full Name" data-i18n-placeholder="form.fullName">
+                        </label>
+              
+                        <label class="content__input input">
+                          <input type="tel" name="phone" id="phone" placeholder="Mobile Phone" data-i18n-placeholder="form.phone">
+                        </label>
+              
+                        <label class="content__input input">
+                          <input type="email" name="email" id="email" placeholder="E-mail" data-i18n-placeholder="form.email">
+                        </label>
                       </div>
-                      <div class="info__header">
+              
+                      <h3 class="content__subtitle" data-i18n="form.documentTitle">Personal document</h3>
+              
+                      <div class="content__custom-select">
+                        <select name="document" id="document" data-i18n-select>
+                          <option value="passport" data-i18n="form.passport">Passport</option>
+                          <option value="passport" data-i18n="form.passport">Passport</option>
+                          <option value="passport" data-i18n="form.passport">Passport</option>
+                          <option value="passport" data-i18n="form.passport">Passport</option>
+                        </select>
+                      </div>
+              
+                      <label class="form__input checkbox">
+                        <input type="checkbox" name="agree" value="agree" required>
+                        <span class="checkbox__custom"></span>
+                        <span class="checkbox__text" data-i18n="form.agreementText">
+                          I accept the terms of information transfer
+                        </span>
+              
+                        <button type="submit" class="content__button btn btn-reset" data-i18n="form.submitButton">Send</button>
+                      </label>
+                    </form>
+                  </div>
+                </div>
+              </section>
+              
+               <aside class="info">
+                <div class="info__container">
+                    <div class="content__alert">
+                        <p>Dear customers of the bank! At the moment, the callback order is available only to residents of the European Union. In other cases, customer service is provided via online chat in the bank's personal account.</p>
+                        <div class="content__alert-close">
+                            <img src="img/close.svg" alt="img" width="14" heigth="14" loading="lazy">
+                        </div>
+                    </div>
+                    <div class="info__header">
                         <div class="info__notification">
-                          <img src="img/notification-bing.svg" alt="Notifications" width="24" height="24" loading="lazy">
-                          <span></span>
+                            <img src="img/notification-bing.svg" alt="img" width="24" heigth="24" loading="lazy">
+                            <span></span>
                         </div>
                         <ul class="info__list info__list-language list-reset">
-                          <li class="info__item-language">
-                            <a href="#" class="info__link-language" data-lang="en">
-                              <img src="img/en.svg" alt="English" width="21" height="15" loading="lazy">
-                              <span data-i18n="language.english">English</span>
-                            </a>    
-                            <img class="info__arrow" src="img/arrow.svg" alt="Toggle language menu" width="12" height="12" loading="lazy">
-                            <ul class="info__sub-menu list-reset">
-                              <li class="info__sub-item">
-                                <a href="#" class="info__sub-link" data-lang="en">
-                                  <img src="img/en.svg" alt="English" width="21" height="15" loading="lazy">
-                                  <span data-i18n="language.english">English</span>
-                                </a>
-                              </li>
-                              <li class="info__sub-item">
-                                <a href="#" class="info__sub-link" data-lang="ru">
-                                  <img src="img/ru.svg" alt="Russian" width="21" height="15" loading="lazy">
-                                  <span data-i18n="language.russian">Russian</span>
-                                </a>
-                              </li>
-                            </ul>
-                          </li>
+                            <li class="info__item-language">
+                                <a href="#" class="info__link-language" data-lang="en">
+                                    <img src="img/en.svg" alt="img" width="21" heigth="15" loading="lazy">
+                                    English
+                                </a>    
+                                <img class="info__arrow" src="img/arrow.svg" alt="img" width="12" heigth="12" loading="lazy">
+                                <ul class="info__sub-menu list-reset" >
+                                    <li class="info__sub-item"><a href="#" class="info__sub-link" data-lang="en">
+                                        <img src="img/en.svg" alt="img" width="21" heigth="15" loading="lazy">
+                                        English
+                                    </a></li>
+                                    <li class="info__sub-item"><a href="#" class="info__sub-link" data-lang="ru">
+                                        <img src="img/ru.svg" alt="img" width="21" heigth="15" loading="lazy">
+                                        Russian
+                                    </a></li>
+                                </ul>
+                            </li>
                         </ul>
-                        <div class="info__name btn btn-reset">
-                          <p>James</p>
-                        </div>
-                      </div>
-                      <div class="info__content">
-                        <h3 class="info__title" data-i18n="info.balanceTitle">Balance</h3>
+                        <div class="info__name btn btn-reset"><p>James</p></div>
+                    </div>
+                    <div class="info__content">
+                        <h3 class="info__title">Balance</h3>
                         <div class="info__column">
-                           <div class="info__field">
-                            <p class="info__balance info__balance-ru">12378559.43</p>
-                            <img src="img/ruble.svg" alt="RUB" width="8" height="15" loading="lazy">
-                          </div>
-                          <div class="info__field">
-                            <p class="info__balance info__balance-us">18980.93</p>
-                            <img src="img/usdt.svg" alt="USD" width="8" height="15" loading="lazy">
-                          </div>
-                          <div class="info__field">
-                            <p class="info__balance info__balance-eu">30670.65</p>
-                            <img src="img/euro.svg" alt="EUR" width="8" height="15" loading="lazy">
-                          </div>
+                            <div class="info__field">
+                                <p class="info__balance info__balance-ru">12378559.43</p>
+                                <img src="img/ruble.svg" alt="img" width="8" heigth="15" loading="lazy">
+                            </div>
+                            <div class="info__field">
+                                <p class="info__balance info__balance-us">18980.93</p>
+                                <img src="img/usdt.svg" alt="img" width="8" heigth="15" loading="lazy">
+                            </div>
+                            <div class="info__field">
+                                <p class="info__balance info__balance-eu">30670.65</p>
+                                <img src="img/euro.svg" alt="img" width="8" heigth="15" loading="lazy">
+                            </div>
                         </div>
-                      </div>
-                      <div class="info__details active">
+                    </div>
+                    <div class="info__details active">
                         <button class="info__button btn-reset">
-                          <span class="info__caption" data-i18n="info.myDetails">My details</span>
-                          <span class="info__indicator">
-                            <img src="img/arrow.svg" alt="Toggle details" width="8" height="8" loading="lazy">
-                          </span>
+                            <span class="info__caption">My details</span>
+                            <span class="info__indicator">
+                                <img src="img/arrow.svg" alt="img" width="8" heigth="8" loading="lazy">
+                            </span>
                         </button>
                         <div class="info__wrapper">
-                          <h4 class="info__subtitle" data-i18n="info.bankOnline">LandboBank-Online</h4>
-                          <p class="info__text">LandboBank-Online</p>
-                          <h4 class="info__subtitle" data-i18n="info.personalCode">Personal code</h4>
-                          <p class="info__text">34091233711</p>
-                          <h4 class="info__subtitle" data-i18n="info.iban">IBAN</h4>
-                          <p class="info__text">DK127144001434456658</p>
-                          <h4 class="info__subtitle" data-i18n="info.swift">SWIFT</h4>
-                          <p class="info__text">ABKFDKL1</p>
+                            <h4 class="info__subtitle">LandboBank-Online</h4>
+                            <p class="info__text">LandboBank-Online</p>
+                            <h4 class="info__subtitle">Personal code</h4>
+                            <p class="info__text">34091233711</p>
+                            <h4 class="info__subtitle">IBAN</h4>
+                            <p class="info__text">DK127144001434456658</p>
+                            <h4 class="info__subtitle">SWIFT</h4>
+                            <p class="info__text">ABKFDKL1</p>
                         </div>
-                      </div>
                     </div>
-                </aside>
+                </div>
+               </aside>
             </main>
         </div>
     </div>

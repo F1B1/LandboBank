@@ -7,64 +7,78 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="css/style.css">
     <script defer src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script defer src="script.js"></script>
+    <script type="module" defer src="script.js"></script>
 </head>
 <body class="page__body">
     <h1 class="visually-hidden">Политика Конфиденциальности</h1>
     <div class="site-container">
         <header class="header">
             <div class="header__container container">
-                <div class="header__top-mobile">
-                    <a href="#" class="header__logo">
-                        <img src="img/logo.svg" alt="img" width="143" heigth="24" loading="lazy">
-                    </a>
-                    <a href="#" class="header__logo header__logo-mobile">
-                        <img src="img/logo-white.svg" alt="img" width="143" heigth="24" loading="lazy">
-                    </a>
-                    <button type="button" class="menu__icon icon-menu btn-reset" aria-label="menu"><span></span></button>
-                </div>
-                <div class="header__wrapper">
-                    <div class="header__inner">
-                        <a href="#" class="header__logo">
-                            <img src="img/logo.svg" alt="img" width="143" heigth="24" loading="lazy">
+              <div class="header__top-mobile">
+                <a href="#" class="header__logo">
+                  <img src="img/logo.svg" alt="img" width="143" height="24" loading="lazy">
+                </a>
+                <a href="#" class="header__logo header__logo-mobile">
+                  <img src="img/logo-white.svg" alt="img" width="143" height="24" loading="lazy">
+                </a>
+                <button type="button" class="menu__icon icon-menu btn-reset" aria-label="menu"><span></span></button>
+              </div>
+          
+              <div class="header__wrapper">
+                <div class="header__inner">
+                  <a href="#" class="header__logo">
+                    <img src="img/logo.svg" alt="img" width="143" height="24" loading="lazy">
+                  </a>
+          
+                  <nav class="header__menu">
+                    <ul class="header__list list-reset">
+                      <li class="header__item">
+                        <a href="#" class="header__link" data-i18n="menu.aboutCompany">About company</a>
+                      </li>
+                      <li class="header__item">
+                        <a href="#" class="header__link" data-i18n="menu.popularServices">Popular services</a>
+                      </li>
+                      <li class="header__item">
+                        <a href="#" class="header__link" data-i18n="menu.business">Business</a>
+                      </li>
+                    </ul>
+                  </nav>
+          
+                  <div class="header__block">
+                    <ul class="header__list info__list-language list-reset">
+                      <li class="info__item-language">
+                        <a href="#" class="info__link-language" data-lang="en">
+                          <img src="img/en.svg" alt="English" width="21" height="15" loading="lazy">
                         </a>
-                        <nav class="header__menu">
-                            <ul class="header__list list-reset">
-                                <li class="header__item"><a href="#" class="header__link">About company</a></li>
-                                <li class="header__item"><a href="#" class="header__link">Popular services</a></li>
-                                <li class="header__item"><a href="#" class="header__link">Business</a></li>
-                            </ul>
-                        </nav>
-                        <div class="header__block">
-                            <ul class="header__list header__list-language list-reset">
-                                <li class="header__item-language">
-                                    <a href="#" class="header__link-language">
-                                        <img src="img/en.svg" alt="img" width="21" heigth="15" loading="lazy">
-                                    </a>    
-                                    <img class="header__arrow" src="img/arrow.svg" alt="img" width="12" heigth="12" loading="lazy">
-                                    <ul class="header__sub-menu list-reset">
-                                        <li class="header__sub-item"><a href="#" class="header__sub-link">
-                                            <img src="img/en.svg" alt="img" width="21" heigth="15" loading="lazy">
-                                        </a></li>
-                                        <li class="header__sub-item"><a href="#" class="header__sub-link">
-                                            <img src="img/en.svg" alt="img" width="21" heigth="15" loading="lazy">
-                                        </a></li>
-                                    </ul>
-                                </li>
-                            </ul>
-                            <div class="header__buttons">
-                                <a href="#" class="header__button header__button-open btn btn-reset">Open an account</a>
-                                <a href="#" class="header__button header__button-login btn btn-reset">Log in</a>
-                            </div>
-                        </div>
+                        <img class="info__arrow" src="img/arrow.svg" alt="Toggle language menu" width="12" height="12" loading="lazy">
+                        <ul class="info__sub-menu list-reset">
+                          <li class="info__sub-item">
+                            <a href="#" class="info__sub-link" data-lang="en">
+                              <img src="img/en.svg" alt="English" width="21" height="15" loading="lazy">
+                            </a>
+                          </li>
+                          <li class="info__sub-item">
+                            <a href="#" class="info__sub-link" data-lang="ru">
+                              <img src="img/ru.svg" alt="Russian" width="21" height="15" loading="lazy">
+                            </a>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+          
+                    <div class="header__buttons">
+                      <a href="#" class="header__button header__button-open btn btn-reset" data-i18n="button.openAccount">Open an account</a>
+                      <a href="#" class="header__button header__button-login btn btn-reset" data-i18n="button.login">Log in</a>
                     </div>
+                  </div>
                 </div>
+              </div>
             </div>
         </header>
         <main class="main">
             <section class="about section-96 section-first">
                 <div class="about__container container">
-                    <h2 class="about__title">Privacy policy</h2>
+                    <h2 class="about__title" data-i18n="privacy.title">Privacy policy</h2>
                     <div class="about__image">
                         <img src="img/privacy01.png" alt="img" width="396" heigth="463" loading="lazy">
                     </div>
@@ -92,48 +106,61 @@
         </main>
         <footer class="footer">
             <div class="footer__container container">
-                <div class="footer__columns">
-                    <div class="footer__column">
-                        <picture class="footer__logo">
-                            <source media="(max-width: 768px)" srcset="img/logo-white-mobile.svg">
-                            <img src="img/logo-white.svg" alt="img" width="145" heigth="24" loading="lazy">
-                        </picture>
-                        <ul class="footer__list list-reset">
-                            <li class="footer__item"><a href="#" class="footer__link">About bank</a></li>
-                            <li class="footer__item"><a href="#" class="footer__link">Terms of Use</a></li>
-                            <li class="footer__item"><a href="#" class="footer__link">For Business</a></li>
-                            <li class="footer__item"><a href="#" class="footer__link">Privacy</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer__column">
-                        <div class="footer__block"></div>
-                        <div class="footer__block">
-                            <p class="footer__text">Contact us</p>
-                            <a href="#" class="footer__link">+49-4444-8000</a>
-                        </div>
-                        <div class="footer__block">
-                            <p class="footer__text">E-mail</p>
-                            <a href="#" class="footer__link">support@landbo-bankfilial.online</a>
-                        </div>
-                    </div>
-                    <div class="footer__column">
-                        <div class="footer__block"></div>
-                        <div class="footer__block">
-                            <p class="footer__text">Address</p>
-                            <p class="footer__link">60640 Frankfurt am Main, Germany</p>
-                        </div>
-                        <div class="footer__block">
-                            <p class="footer__text">Opening hours</p>
-                            <p class="footer__link">Md - Sat 10:00 - 00:00 Sun 12:00 - 23:00</p>
-                        </div>
-                    </div>
-                    <div class="footer__column footer__column-up">
-                        <a href="#primary" class="footer__up">
-                            <img src="img/arrow-up.svg" alt="img" width="12" heigth="12" loading="lazy">
-                        </a>
-                        <p class="footer__copyright">Copyright ©2012-2024 LandboBank-Online. Rights Reserved</p>
-                    </div>
+              <div class="footer__columns">
+                <div class="footer__column">
+                  <picture class="footer__logo">
+                    <source media="(max-width: 768px)" srcset="img/logo-white-mobile.svg">
+                    <img src="img/logo-white.svg" alt="img" width="145" height="24" loading="lazy">
+                  </picture>
+                  <ul class="footer__list list-reset">
+                    <li class="footer__item">
+                      <a href="#" class="footer__link" data-i18n="footer.aboutBank">About bank</a>
+                    </li>
+                    <li class="footer__item">
+                      <a href="#" class="footer__link" data-i18n="footer.termsOfUse">Terms of Use</a>
+                    </li>
+                    <li class="footer__item">
+                      <a href="#" class="footer__link" data-i18n="footer.forBusiness">For Business</a>
+                    </li>
+                    <li class="footer__item">
+                      <a href="#" class="footer__link" data-i18n="footer.privacy">Privacy</a>
+                    </li>
+                  </ul>
                 </div>
+          
+                <div class="footer__column">
+                  <div class="footer__block"></div>
+                  <div class="footer__block">
+                    <p class="footer__text" data-i18n="footer.contactUs">Contact us</p>
+                    <a href="#" class="footer__link">+49-4444-8000</a>
+                  </div>
+                  <div class="footer__block">
+                    <p class="footer__text" data-i18n="footer.email">E-mail</p>
+                    <a href="#" class="footer__link">support@landbo-bankfilial.online</a>
+                  </div>
+                </div>
+          
+                <div class="footer__column">
+                  <div class="footer__block"></div>
+                  <div class="footer__block">
+                    <p class="footer__text" data-i18n="footer.address">Address</p>
+                    <p class="footer__link">60640 Frankfurt am Main, Germany</p>
+                  </div>
+                  <div class="footer__block">
+                    <p class="footer__text" data-i18n="footer.openingHours">Opening hours</p>
+                    <p class="footer__link" data-i18n="footer.openingDate">Md - Sat 10:00 - 00:00 Sun 12:00 - 23:00</p>
+                  </div>
+                </div>
+          
+                <div class="footer__column footer__column-up">
+                  <a href="#primary" class="footer__up">
+                    <img src="img/arrow-up.svg" alt="img" width="12" height="12" loading="lazy">
+                  </a>
+                  <p class="footer__copyright" data-i18n="footer.copyright">
+                    Copyright ©2012-2024 LandboBank-Online. Rights Reserved
+                  </p>
+                </div>
+              </div>
             </div>
         </footer>
     </div>

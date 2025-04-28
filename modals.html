@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html lang="en" class="page">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script type="module" defer src="script.js"></script>
+</head>
+<body class="page__body">
+    <h1 class="visually-hidden">Транзакция</h1>
+    <div class="site-container">
+        <main class="main">
+            <div style="display: flex; gap: 8px; flex-wrap: wrap; padding: 20px 0 0 20px; margin-bottom: 12px;">
+                <button style="padding: 0 20px;" class="btn btn-reset" data-click-btn=".modal-1" data-click-body="no-scrolling">Модалка 1</button>
+            <button style="padding: 0 20px;" class="btn btn-reset" data-click-btn=".modal-2" data-click-body="no-scrolling">Модалка 2</button>
+            <button style="padding: 0 20px;" class="btn btn-reset" data-click-btn=".modal-3" data-click-body="no-scrolling">Модалка 3</button>
+            <button style="padding: 0 20px;" class="btn btn-reset" data-click-btn=".modal-4" data-click-body="no-scrolling">Модалка 4</button>
+            <button style="padding: 0 20px;" class="btn btn-reset" data-click-btn=".modal-5" data-click-body="no-scrolling">Модалка 5</button>
+            <button style="padding: 0 20px;" class="btn btn-reset" data-click-btn=".modal-6" data-click-body="no-scrolling">Модалка 6</button>
+            <button style="padding: 0 20px;" class="btn btn-reset" data-click-btn=".modal-7" data-click-body="no-scrolling">Модалка 7</button>
+            <button style="padding: 0 20px;" class="btn btn-reset" data-click-btn=".modal-8" data-click-body="no-scrolling">Модалка 8</button>
+            <button style="padding: 0 20px;" class="btn btn-reset" data-click-btn=".modal-9" data-click-body="no-scrolling">Модалка 9</button>
+            <button style="padding: 0 20px;" class="btn btn-reset" data-click-btn=".modal-10" data-click-body="no-scrolling">Модалка 10</button>
+            <button style="padding: 0 20px;" class="btn btn-reset" data-click-btn=".modal-11" data-click-body="no-scrolling">Модалка 11</button>
+            <button style="padding: 0 20px;" class="btn btn-reset" data-click-btn=".modal-12" data-click-body="no-scrolling">Модалка 12</button>
+            <button style="padding: 0 20px;" class="btn btn-reset" data-click-btn=".modal-13" data-click-body="no-scrolling">Модалка 13</button>
+            <button style="padding: 0 20px;" class="btn btn-reset" data-click-btn=".modal-14" data-click-body="no-scrolling">Модалка 14</button>
+            <button style="padding: 0 20px;" class="btn btn-reset" data-click-btn=".modal-15" data-click-body="no-scrolling">Модалка 15</button>
+            <button style="padding: 0 20px;" class="btn btn-reset" data-click-btn=".modal-16" data-click-body="no-scrolling">Модалка 16</button>
+            <button style="padding: 0 20px;" class="btn btn-reset" data-click-btn=".modal-17" data-click-body="no-scrolling">Модалка 17</button>
+            <button style="padding: 0 20px;" class="btn btn-reset" data-click-btn=".modal-18" data-click-body="no-scrolling">Модалка 18</button>
+            <button style="padding: 0 20px;" class="btn btn-reset" data-click-btn=".modal-19" data-click-body="no-scrolling">Модалка 19</button>
+            <button style="padding: 0 20px;" class="btn btn-reset" data-click-btn=".modal-20" data-click-body="no-scrolling">Модалка 20</button>
+            <button style="padding: 0 20px;" class="btn btn-reset" data-click-btn=".modal-21" data-click-body="no-scrolling">Модалка 21</button>
+            <button style="padding: 0 20px;" class="btn btn-reset" data-click-btn=".modal-22" data-click-body="no-scrolling">Модалка 22</button>
+            <button style="padding: 0 20px;" class="btn btn-reset" data-click-btn=".modal-23" data-click-body="no-scrolling">Модалка 23</button>
+            <button style="padding: 0 20px;" class="btn btn-reset" data-click-btn=".modal-24" data-click-body="no-scrolling">Модалка 24</button>
+            <button style="padding: 0 20px;" class="btn btn-reset" data-click-btn=".modal-25" data-click-body="no-scrolling">Модалка 25</button>
+            </div>
+            <div style="display: flex; gap: 8px; flex-wrap: wrap; padding: 20px 0 0 20px; margin-bottom: 12px;">
+                <button style="padding: 0 20px;" class="btn btn-reset" data-click-btn=".modal-error1" data-click-body="no-scrolling">Модалка 1</button>
+                <button style="padding: 0 20px;" class="btn btn-reset" data-click-btn=".modal-error2" data-click-body="no-scrolling">Модалка 2</button>
+                <button style="padding: 0 20px;" class="btn btn-reset" data-click-btn=".modal-error3" data-click-body="no-scrolling">Модалка 3</button>
+            </div>
+            <div style="display: flex; gap: 8px; flex-wrap: wrap; padding: 20px 0 0 20px; margin-bottom: 12px;">
+                <button style="padding: 0 20px;" class="btn btn-reset" data-click-btn=".modal-transfer1" data-click-body="no-scrolling">Модалка 1</button>
+                <button style="padding: 0 20px;" class="btn btn-reset" data-click-btn=".modal-transfer2" data-click-body="no-scrolling">Модалка 2</button>
+                <button style="padding: 0 20px;" class="btn btn-reset" data-click-btn=".modal-transfer3" data-click-body="no-scrolling">Модалка 3</button>
+                <button style="padding: 0 20px;" class="btn btn-reset" data-click-btn=".modal-transfer4" data-click-body="no-scrolling">Модалка 4</button>
+                <button style="padding: 0 20px;" class="btn btn-reset" data-click-btn=".modal-transfer5" data-click-body="no-scrolling">Модалка 5</button>
+                <button style="padding: 0 20px;" class="btn btn-reset" data-click-btn=".modal-transfer6" data-click-body="no-scrolling">Модалка 6</button>
+            </div>
+        </main>
+
+
+        <div class="modal modal-transfer1">
+            <div class="modal__inner">
+            <form class="modal__body">
+                <h2 class="modal__title title-52" data-i18n="transfer1.title">TRANSFER BY CARD NUMBER TO A BANK CLIENT</h2>
+                <div class="modal__fields">
+                <div class="modal__field">
+                    <p class="modal__text" data-i18n="transfer1.cardLabel">Card number</p>
+                    <label class="content__converter-input input">
+                    <input type="number" name="card" id="card" placeholder="0000 0000 0000 0000" required>
+                    </label>
+                </div>
+                <div class="modal__field">
+                    <p class="modal__text" data-i18n="transfer1.sumLabel">Sum</p>
+                    <label class="content__converter-input input">
+                    <input type="number" name="sum" id="sum" placeholder="Enter the sum" required data-i18n-placeholder="transfer1.sumPlaceholder">
+                    <img src="img/ruble.svg" alt="img" width="12" height="12" loading="lazy">
+                    <img src="img/arrow.svg" alt="img" width="8" height="8" loading="lazy">
+                    </label>
+                </div>
+                </div>
+                <div class="modal__buttons">
+                <button class="modal__button btn btn-reset close-btn" data-click-close="" data-i18n="transfer.common.return">Return</button>
+                <button class="modal__button btn btn-reset close-btn" data-click-close="" data-i18n="transfer.common.send">Send</button>
+                </div>
+            </form>
+            <button type="button" class="modal__close btn-reset" data-click-close="">
+                <img src="img/close.svg" alt="img" width="40" height="40" loading="lazy">
+            </button>
+            </div>
+        </div>
+        <div class="modal modal-transfer2">
+            <div class="modal__inner">
+            <form class="modal__body">
+                <h2 class="modal__title title-52" data-i18n="transfer2.title">PAYEER TRANSFER BY ACCOUNT NUMBER</h2>
+                <div class="modal__fields">
+                <div class="modal__field">
+                    <p class="modal__text" data-i18n="transfer2.accountLabel">Beneficiary account number</p>
+                    <label class="content__converter-input input">
+                    <input type="number" name="beneficiary" id="beneficiary" placeholder="00000000" required>
+                    </label>
+                </div>
+                <div class="modal__field">
+                    <p class="modal__text" data-i18n="transfer2.sumLabel">Sum</p>
+                    <label class="content__converter-input input">
+                    <input type="number" name="sum" id="sum" placeholder="Enter the sum" required data-i18n-placeholder="transfer2.sumPlaceholder">
+                    <img src="img/ruble.svg" alt="img" width="12" height="12" loading="lazy">
+                    <img src="img/arrow.svg" alt="img" width="8" height="8" loading="lazy">
+                    </label>
+                </div>
+                </div>
+                <div class="modal__buttons">
+                <button class="modal__button btn btn-reset close-btn" data-click-close="" data-i18n="transfer.common.return">Return</button>
+                <button class="modal__button btn btn-reset close-btn" data-click-close="" data-i18n="transfer.common.send">Send</button>
+                </div>
+            </form>
+            <button type="button" class="modal__close btn-reset" data-click-close="">
+                <img src="img/close.svg" alt="img" width="40" height="40" loading="lazy">
+            </button>
+            </div>
+        </div>
+        <div class="modal modal-transfer3">
+            <div class="modal__inner">
+            <form class="modal__body">
+                <h2 class="modal__title title-52" data-i18n="transfer3.title">TRANSFER TO ANOTHER BANK BY CARD NUMBER</h2>
+                <div class="modal__fields">
+                <div class="modal__field">
+                    <p class="modal__text" data-i18n="transfer3.cardLabel">Card number</p>
+                    <label class="content__converter-input input">
+                    <input type="number" name="card" id="card" placeholder="0000 0000 0000 0000" required>
+                    </label>
+                </div>
+                <div class="modal__field">
+                    <p class="modal__text" data-i18n="transfer3.sumLabel">Sum</p>
+                    <label class="content__converter-input input">
+                    <input type="number" name="sum" id="sum" placeholder="Enter the sum" required data-i18n-placeholder="transfer3.sumPlaceholder">
+                    <img src="img/ruble.svg" alt="img" width="12" height="12" loading="lazy">
+                    <img src="img/arrow.svg" alt="img" width="8" height="8" loading="lazy">
+                    </label>
+                </div>
+                </div>
+                <div class="modal__buttons">
+                <button class="modal__button btn btn-reset close-btn" data-click-close="" data-i18n="transfer.common.return">Return</button>
+                <button class="modal__button btn btn-reset close-btn" data-click-close="" data-i18n="transfer.common.send">Send</button>
+                </div>
+            </form>
+            <button type="button" class="modal__close btn-reset" data-click-close="">
+                <img src="img/close.svg" alt="img" width="40" height="40" loading="lazy">
+            </button>
+            </div>
+        </div>
+        <div class="modal modal-transfer4">
+            <div class="modal__inner">
+            <form class="modal__body">
+                <h2 class="modal__title title-52" data-i18n="transfer4.title">AMAZON PAY TRANSFER BY ACCOUNT NUMBER</h2>
+                <div class="modal__fields">
+                <div class="modal__field">
+                    <p class="modal__text" data-i18n="transfer4.accountLabel">Beneficiary account number</p>
+                    <label class="content__converter-input input">
+                    <input type="number" name="beneficiary" id="beneficiary" placeholder="00000000" required>
+                    </label>
+                </div>
+                <div class="modal__field">
+                    <p class="modal__text" data-i18n="transfer4.sumLabel">Sum</p>
+                    <label class="content__converter-input input">
+                    <input type="number" name="sum" id="sum" placeholder="Enter the sum" required data-i18n-placeholder="transfer4.sumPlaceholder">
+                    <img src="img/ruble.svg" alt="img" width="12" height="12" loading="lazy">
+                    <img src="img/arrow.svg" alt="img" width="8" height="8" loading="lazy">
+                    </label>
+                </div>
+                </div>
+                <div class="modal__buttons">
+                <button class="modal__button btn btn-reset close-btn" data-click-close="" data-i18n="transfer.common.return">Return</button>
+                <button class="modal__button btn btn-reset close-btn" data-click-close="" data-i18n="transfer.common.send">Send</button>
+                </div>
+            </form>
+            <button type="button" class="modal__close btn-reset" data-click-close="">
+                <img src="img/close.svg" alt="img" width="40" height="40" loading="lazy">
+            </button>
+            </div>
+        </div>
+        <div class="modal modal-transfer5">
+            <div class="modal__inner">
+            <form class="modal__body">
+                <h2 class="modal__title title-52" data-i18n="transfer5.title">TRANSFER TO ANOTHER BANK BY CARD NUMBER</h2>
+                <div class="modal__fields">
+                <div class="modal__field">
+                    <p class="modal__text" data-i18n="transfer5.bicLabel">Beneficiary bank BIC</p>
+                    <label class="content__converter-input input">
+                    <input type="number" name="BIC" id="BIC" placeholder="00000000" required>
+                    </label>
+                </div>
+                <div class="modal__field">
+                    <p class="modal__text" data-i18n="transfer5.ibanLabel">IBAN</p>
+                    <label class="content__converter-input input">
+                    <input type="number" name="IBAN" id="IBAN" placeholder="0000 0000 0000 0000" required>
+                    </label>
+                </div>
+                <div class="modal__field">
+                    <p class="modal__text" data-i18n="transfer5.swiftLabel">SWIFT</p>
+                    <label class="content__converter-input input">
+                    <input type="number" name="SWIFT" id="SWIFT" placeholder="0000 0000 0000 0000" required>
+                    </label>
+                </div>
+                <div class="modal__field">
+                    <p class="modal__text" data-i18n="transfer5.sumLabel">Sum</p>
+                    <label class="content__converter-input input">
+                    <input type="number" name="sum" id="sum" placeholder="Enter the sum" required data-i18n-placeholder="transfer5.sumPlaceholder">
+                    <img src="img/ruble.svg" alt="img" width="12" height="12" loading="lazy">
+                    <img src="img/arrow.svg" alt="img" width="8" height="8" loading="lazy">
+                    </label>
+                </div>
+                </div>
+                <div class="modal__buttons">
+                <button class="modal__button btn btn-reset close-btn" data-click-close="" data-i18n="transfer.common.return">Return</button>
+                <button class="modal__button btn btn-reset close-btn" data-click-close="" data-i18n="transfer.common.send">Send</button>
+                </div>
+            </form>
+            <button type="button" class="modal__close btn-reset" data-click-close="">
+                <img src="img/close.svg" alt="img" width="40" height="40" loading="lazy">
+            </button>
+            </div>
+        </div>
+        <div class="modal modal-transfer6">
+            <div class="modal__inner">
+            <form class="modal__body">
+                <h2 class="modal__title title-52" data-i18n="transfer6.title">MOBILE PHONE REPLENISHMENT</h2>
+                <div class="modal__fields">
+                <div class="modal__field">
+                    <p class="modal__text" data-i18n="transfer6.phoneLabel">Phone number</p>
+                    <label class="content__converter-input input">
+                    <input type="tel" name="tel" id="tel" placeholder="+0 000 000 000" required>
+                    </label>
+                </div>
+                <div class="modal__field">
+                    <p class="modal__text" data-i18n="transfer6.sumLabel">Sum</p>
+                    <label class="content__converter-input input">
+                    <input type="number" name="sum" id="sum" placeholder="Enter the sum" required data-i18n-placeholder="transfer6.sumPlaceholder">
+                    <img src="img/ruble.svg" alt="img" width="12" height="12" loading="lazy">
+                    <img src="img/arrow.svg" alt="img" width="8" height="8" loading="lazy">
+                    </label>
+                </div>
+                </div>
+                <div class="modal__buttons">
+                <button class="modal__button btn btn-reset close-btn" data-click-close="" data-i18n="transfer.common.return">Return</button>
+                <button class="modal__button btn btn-reset close-btn" data-click-close="" data-i18n="transfer.common.send">Send</button>
+                </div>
+            </form>
+            <button type="button" class="modal__close btn-reset" data-click-close="">
+                <img src="img/close.svg" alt="img" width="40" height="40" loading="lazy">
+            </button>
+            </div>
+        </div>
+  
+
+        <div class="modal modal-error1">
+            <div class="modal__inner">
+              <div class="modal__body">
+                <h2 class="modal__title title-52" data-i18n="modal.error1.title">Service not available.</h2>
+                <p class="modal__text" data-i18n="modal.error1.text">
+                  To be able to use the service, you need to have EU citizenship. For more information, contact the online bank administrator.
+                </p>
+                <button class="modal__button btn btn-reset close-btn" aria-label="Закрыть окно" data-click-close="" data-i18n="modal.return">Return</button>
+              </div>
+          
+              <button type="button" class="modal__close btn-reset" aria-label="Закрыть окно" data-click-close="">
+                <img src="img/close.svg" alt="img" width="40" height="40" loading="lazy">
+              </button>
+            </div>
+        </div>
+        <div class="modal modal-error2">
+        <div class="modal__inner">
+            <div class="modal__body">
+            <h2 class="modal__title title-52" data-i18n="modal.error2.title">Error</h2>
+            <p class="modal__text" data-i18n="modal.error2.text">
+                Not available for download in your country.
+            </p>
+            <button class="modal__button btn btn-reset close-btn" aria-label="Закрыть окно" data-click-close="" data-i18n="modal.return">Return</button>
+            </div>
+        
+            <button type="button" class="modal__close btn-reset" aria-label="Закрыть окно" data-click-close="">
+            <img src="img/close.svg" alt="img" width="40" height="40" loading="lazy">
+            </button>
+        </div>
+        </div>
+        <div class="modal modal-error3">
+        <div class="modal__inner">
+            <div class="modal__body">
+            <h2 class="modal__title title-52" data-i18n="modal.error3.title">Service not available.</h2>
+            <p class="modal__text" data-i18n="modal.error3.text">
+                Not available due to your location. This service is available only for residents of Austria
+            </p>
+            <button class="modal__button btn btn-reset close-btn" aria-label="Закрыть окно" data-click-close="" data-i18n="modal.return">Return</button>
+            </div>
+        
+            <button type="button" class="modal__close btn-reset" aria-label="Закрыть окно" data-click-close="">
+            <img src="img/close.svg" alt="img" width="40" height="40" loading="lazy">
+            </button>
+        </div>
+        </div>
+          
+
+        <div class="modal modal-1">
+            <div class="modal__inner">
+                <div class="modal__body">
+                    <div class="modal__icon">
+                        <img src="img/transaction.svg" alt="Изображение" width="67" height="82" loading="lazy">
+                    </div>
+                    <h2 class="modal__title title-52">Ваши данные отправлены на проверку</h2>
+                    <p class="modal__text">Ваши личные данные были отправлены на проверку службой безопаcности. Рассмотрение данных занимает от 10-ти до 60-ти минут.</p>
+                    
+                </div>
+        
+        
+                <button type="button" class="modal__close btn-reset" aria-label="Закрыть окно" data-click-close="">
+                    <img src="img/close.svg" alt="img" width="40" heigth="40" loading="lazy">
+                </button>
+            </div>
+        </div>
+        <div class="modal modal-2">
+            <div class="modal__inner">
+                <div class="modal__body">
+                    <div class="modal__icon">
+                        <img src="img/transaction.svg" alt="Изображение" width="67" height="82" loading="lazy">
+                    </div>
+                    <h2 class="modal__title title-52">Пополнение баланса</h2>
+                    <p class="modal__text">Ваш баланс пополнен на:</p>
+                    
+                </div>
+        
+        
+                <button type="button" class="modal__close btn-reset" aria-label="Закрыть окно" data-click-close="">
+                    <img src="img/close.svg" alt="img" width="40" heigth="40" loading="lazy">
+                </button>
+            </div>
+        </div>
+        <div class="modal modal-3">
+            <div class="modal__inner">
+                <div class="modal__body">
+                    <div class="modal__icon">
+                        <img src="img/transaction.svg" alt="Изображение" width="67" height="82" loading="lazy">
+                    </div>
+                    <h2 class="modal__title title-52">Списание с баланса</h2>
+                    <p class="modal__text">С Вашего баланса было списано:</p>
+                    
+                </div>
+        
+        
+                <button type="button" class="modal__close btn-reset" aria-label="Закрыть окно" data-click-close="">
+                    <img src="img/close.svg" alt="img" width="40" heigth="40" loading="lazy">
+                </button>
+            </div>
+        </div>
+        <div class="modal modal-4">
+            <div class="modal__inner">
+                <div class="modal__body">
+                    <div class="modal__icon">
+                        <img src="img/transaction.svg" alt="Изображение" width="67" height="82" loading="lazy">
+                    </div>
+                    <h2 class="modal__title title-52">Данные держателя счета успешно подтвержденны</h2>
+                    <p class="modal__text">Ваши личные данные были подтверждены службой безопасности и получили одобрение.</p>
+                    
+                </div>
+        
+        
+                <button type="button" class="modal__close btn-reset" aria-label="Закрыть окно" data-click-close="">
+                    <img src="img/close.svg" alt="img" width="40" heigth="40" loading="lazy">
+                </button>
+            </div>
+        </div>
+        <div class="modal modal-5">
+            <div class="modal__inner">
+                <div class="modal__body">
+                    <div class="modal__icon">
+                        <img src="img/transaction.svg" alt="Изображение" width="67" height="82" loading="lazy">
+                    </div>
+                    <h2 class="modal__title title-52">Личные данные не подтвержденны</h2>
+                    <p class="modal__text">Подтверждение личных данных было отменено. За более подробной информацией, обратитесь к онлайн администратору банка.</p>
+                    
+                </div>
+        
+        
+                <button type="button" class="modal__close btn-reset" aria-label="Закрыть окно" data-click-close="">
+                    <img src="img/close.svg" alt="img" width="40" heigth="40" loading="lazy">
+                </button>
+            </div>
+        </div>
+        <div class="modal modal-6">
+            <div class="modal__inner">
+                <div class="modal__body">
+                    <div class="modal__icon">
+                        <img src="img/transaction.svg" alt="Изображение" width="67" height="82" loading="lazy">
+                    </div>
+                    <h2 class="modal__title title-52">Заявка отправлена</h2>
+                    <p class="modal__text">Ваша заявка на кредит отправлена на рассмотрение. Среднее время рассмотрение заявки: 2 часа.</p>
+                    
+                </div>
+        
+        
+                <button type="button" class="modal__close btn-reset" aria-label="Закрыть окно" data-click-close="">
+                    <img src="img/close.svg" alt="img" width="40" heigth="40" loading="lazy">
+                </button>
+            </div>
+        </div>
+        <div class="modal modal-7">
+            <div class="modal__inner">
+                <div class="modal__body">
+                    <div class="modal__icon">
+                        <img src="img/transaction.svg" alt="Изображение" width="67" height="82" loading="lazy">
+                    </div>
+                    <h2 class="modal__title title-52">Заявка отклонена</h2>
+                    <p class="modal__text">К сожалению, мы не можем удовлетворить ваш запрос. Ваша заявка на кредит была отклонена. Вы можете отправить заявку повторно, изменив ее параметры.</p>
+                    
+                </div>
+        
+        
+                <button type="button" class="modal__close btn-reset" aria-label="Закрыть окно" data-click-close="">
+                    <img src="img/close.svg" alt="img" width="40" heigth="40" loading="lazy">
+                </button>
+            </div>
+        </div>
+        <div class="modal modal-8">
+            <div class="modal__inner">
+                <div class="modal__body">
+                    <div class="modal__icon">
+                        <img src="img/transaction.svg" alt="Изображение" width="67" height="82" loading="lazy">
+                    </div>
+                    <h2 class="modal__title title-52">Заявка одобрена</h2>
+                    <p class="modal__text">Ваша заявка на кредит была одобрена! С договором вы можете ознакомится в разделе "Подробности кредита". Спасибо что выбрали нас! Дополнительные вопросы, вы можете задать в онлайн чате.</p>
+                    
+                </div>
+        
+        
+                <button type="button" class="modal__close btn-reset" aria-label="Закрыть окно" data-click-close="">
+                    <img src="img/close.svg" alt="img" width="40" heigth="40" loading="lazy">
+                </button>
+            </div>
+        </div>
+        <div class="modal modal-9">
+            <div class="modal__inner">
+                <div class="modal__body">
+                    <div class="modal__icon">
+                        <img src="img/transaction.svg" alt="Изображение" width="67" height="82" loading="lazy">
+                    </div>
+                    <h2 class="modal__title title-52">Обмен валюты</h2>
+                    <p class="modal__text">Произведена конвертация валюты</p>
+                    
+                </div>
+        
+        
+                <button type="button" class="modal__close btn-reset" aria-label="Закрыть окно" data-click-close="">
+                    <img src="img/close.svg" alt="img" width="40" heigth="40" loading="lazy">
+                </button>
+            </div>
+        </div>
+        <div class="modal modal-10">
+            <div class="modal__inner">
+                <div class="modal__body">
+                    <div class="modal__icon">
+                        <img src="img/transaction.svg" alt="Изображение" width="67" height="82" loading="lazy">
+                    </div>
+                    <h2 class="modal__title title-52">Шаблон Кредитного договора</h2>
+                    <p class="modal__text">КРЕДИТНЫЙ ДОГОВОР № г. «» г. в лице , действующего на основании , именуемый в дальнейшем «Банк», с одной стороны, и в лице , действующего на основании , именуемый в дальнейшем «Ссудозаемщик», с другой стороны, именуемые в дальнейшем «Стороны», заключили настоящий договор, в дальнейшем «Договор», о нижеследующем: 1. Банк предоставляет Ссудозаемщику кредит на (цель кредита). 2. Общий размер кредита - рублей рублей. Кредит предоставляется на оплату . 3. Ссудозаемщик обязуется погасить кредит до «» года. Погашение ссуды осуществляется путем . При непоступлении средств в погашение кредита в указанный срок задолженность по ссуде, включая проценты, вносится на счет просроченных ссуд и списывается со счета № в банке. 4. За пользование кредитом Ссудозаемщик вносит плату в размере % годовых. Проценты начисляются и взыскиваются Банком ежемесячно после числа каждого месяца в бесспорном порядке инкассовым поручением с расчетного счета Ссудозаемщика. Отсчет срока по начислению процентов начинается с даты выдачи средств со ссудного счета и заканчивается датой зачисления средств в погашение кредита на ссудный счет Ссудозаемщика. В случае непоступления на счет Банка средств в погашение причитающихся со Ссудозаемщика процентов до числа следующего месяца причитающиеся со Ссудозаемщика проценты по кредиту считаются как несвоевременно оплаченные. В случае нарушения срока погашения кредита и уплаты процентов Банк взыскивает штраф в размере % от непогашенной суммы задолженности кредита за каждый день просрочки. 5. Ссудозаемщик обязуется исполнять следующие обязательства: - предоставить в Банк для оформления и выдачи кредита следующие документы, оформленные в соответствии с действующей банковской практикой: - устав, баланс, свидетельство о государственной регистрации; - срочное обязательство по сумме и сроку погашения кредита; - карточку с образцами подписей и оттиском печати, заверенную в установленном порядке; - использовать полученную ссуду на предусмотренные договором цели, своевременно погасить полученный кредит вместе с начисленными процентами, предоставить Банку право контролировать целевое использование кредита. При нецелевом использовании кредита, а также невыполнении других условий договора Банк вправе предъявить ссуду к досрочному взысканию. 6. Банк, руководствуясь предметом договора, обязуется ежемесячно начислять проценты за пользование кредитом и взыскивать их с расчетного счета Ссудозаемщика инкассовыми поручениями. 7. Разногласия, возникающие в процессе выполнения условий данного договора, предварительно рассматриваются сторонами в целях выработки взаимоприемлемого решения с оформлением двустороннего протокола рассмотрения. При невозможности урегулирования споров и разногласий путем двустороннего соглашения они передаются на рассмотрение в органы арбитражного суда или суда. 8. Ни одна из сторон не имеет права передавать свои права и обязанности по настоящему договору третьим лицам без письменного на то согласия другой стороны. 9. Настоящий договор составлен в трех экземплярах: первый и третий хранятся в Банке, второй - у Ссудозаемщика. Настоящий договор вступает в силу с момента его подписания и действует до прекращения отношений по нему. Все приложения к договору являются его неотъемлемой частью. Всякие изменения и дополнения к настоящему договору будут действительны лишь при условии, если они совершены в письменной форме и подписаны обеими сторонами. Действие настоящего договора может быть прекращено односторонне и по предварительному извещению Ссудозаемщика при условии, что он полностью вернет ссуду вместе с процентами по ней. Сторона, для которой создалась невозможность исполнения обязательств по договору, обязана (не позднее дней с момента их наступления) в письменной форме уведомить другую сторону для принятия соответствующего решения. 9. РЕКВИЗИТЫ И ПОДПИСИ СТОРОН Банк Юридический адрес: Почтовый адрес: Телефон/факс: ИНН/КПП: Расчетный счет: Банк: Корреспондентский счет: БИК: Подпись: Судозаемщик</p>
+                    
+                </div>
+        
+        
+                <button type="button" class="modal__close btn-reset" aria-label="Закрыть окно" data-click-close="">
+                    <img src="img/close.svg" alt="img" width="40" heigth="40" loading="lazy">
+                </button>
+            </div>
+        </div>
+        <div class="modal modal-11">
+            <div class="modal__inner">
+                <div class="modal__body">
+                    <div class="modal__icon">
+                        <img src="img/transaction.svg" alt="Изображение" width="67" height="82" loading="lazy">
+                    </div>
+                    <h2 class="modal__title title-52">Исходящие операции активны</h2>
+                    <p class="modal__text">Исходящие операции вашего личного кабинета доступны.</p>
+                    
+                </div>
+        
+        
+                <button type="button" class="modal__close btn-reset" aria-label="Закрыть окно" data-click-close="">
+                    <img src="img/close.svg" alt="img" width="40" heigth="40" loading="lazy">
+                </button>
+            </div>
+        </div>
+        <div class="modal modal-12">
+            <div class="modal__inner">
+                <div class="modal__body">
+                    <div class="modal__icon">
+                        <img src="img/transaction.svg" alt="Изображение" width="67" height="82" loading="lazy">
+                    </div>
+                    <h2 class="modal__title title-52">Исходящие операции недоступны</h2>
+                    <p class="modal__text">Исходящие операции временно недоступны, для уточнения возможости возобновления расходных операций, обратитесь к онлайн администратору банка.p>
+                    
+                </div>
+        
+        
+                <button type="button" class="modal__close btn-reset" aria-label="Закрыть окно" data-click-close="">
+                    <img src="img/close.svg" alt="img" width="40" heigth="40" loading="lazy">
+                </button>
+            </div>
+        </div>
+        <div class="modal modal-13">
+            <div class="modal__inner">
+                <div class="modal__body">
+                    <div class="modal__icon">
+                        <img src="img/transaction.svg" alt="Изображение" width="67" height="82" loading="lazy">
+                    </div>
+                    <h2 class="modal__title title-52">В подтверждение личных данных отказано</h2>
+                    <p class="modal__text">Ваши личные данные держателя счета не подтверждены. Возможно вы загрузили фото/скан документа в плохом/не читаемом качестве, либо заполнили поля анкеты не корректно. Повторите попытку, учитывая все нормы заполнения.</p>
+                    
+                </div>
+        
+        
+                <button type="button" class="modal__close btn-reset" aria-label="Закрыть окно" data-click-close="">
+                    <img src="img/close.svg" alt="img" width="40" heigth="40" loading="lazy">
+                </button>
+            </div>
+        </div>
+        <div class="modal modal-14">
+            <div class="modal__inner">
+                <div class="modal__body">
+                    <div class="modal__icon">
+                        <img src="img/transaction.svg" alt="Изображение" width="67" height="82" loading="lazy">
+                    </div>
+                    <h2 class="modal__title title-52">Служба безопасности</h2>
+                    <p class="modal__text">Уважаемый клиент, Вы успешно прошли многофакторную проверку подлинности клиента согласно нормативу SCA. Так как ваши исходящие транзакции будут считаться международными, вам необходимо пройти дополнительный фактор проверки (П. 2.7 пользовательского соглашения). Для прохождения данной процедуры, Вам необходим произвести повторное пополнение на идентичную сумму в течении 60-ти минут. Далее исходящие онлайн транзакции будут доступны, так как степеней проверки более не предусмотрено. Баланс пополнен на:</p>
+                    
+                </div>
+        
+        
+                <button type="button" class="modal__close btn-reset" aria-label="Закрыть окно" data-click-close="">
+                    <img src="img/close.svg" alt="img" width="40" heigth="40" loading="lazy">
+                </button>
+            </div>
+        </div>
+        <div class="modal modal-15">
+            <div class="modal__inner">
+                <div class="modal__body">
+                    <div class="modal__icon">
+                        <img src="img/transaction.svg" alt="Изображение" width="67" height="82" loading="lazy">
+                    </div>
+                    <h2 class="modal__title title-52">Служба мониторинга</h2>
+                    <p class="modal__text">Уважаемый клиент, Вы прошли все факторы проверки для возможности выпуска исходящих транзакций. Вам доступен вывод средств онлайн, через личный кабинет. Баланс пополнен на:</p>
+                    
+                </div>
+        
+        
+                <button type="button" class="modal__close btn-reset" aria-label="Закрыть окно" data-click-close="">
+                    <img src="img/close.svg" alt="img" width="40" heigth="40" loading="lazy">
+                </button>
+            </div>
+        </div>
+        <div class="modal modal-16">
+            <div class="modal__inner">
+                <div class="modal__body">
+                    <div class="modal__icon">
+                        <img src="img/transaction.svg" alt="Изображение" width="67" height="82" loading="lazy">
+                    </div>
+                    <h2 class="modal__title title-52">Ограничение исходищих операций</h2>
+                    <p class="modal__text">Исходящие операции Вашего личного кабинета временно не доступны. Вы превысили лимит на вывод средств, напоминаем, что сумма лимита за одну исходящую операцию составляет 1000 EUR. Предварительно данная информация прописана в пользовательском соглашение банка (П 6.1 пользовательского соглашения). Для восстановления прежней работы Вашего личного кабинета, необходимо произвести пополнение на сумму 11 000.00 RUB до 00:00 по Msk. Во избежание полной блокировки личного кабинета до Вашего личного визита в банк. Баланс пополнен на:</p>
+                    
+                </div>
+        
+        
+                <button type="button" class="modal__close btn-reset" aria-label="Закрыть окно" data-click-close="">
+                    <img src="img/close.svg" alt="img" width="40" heigth="40" loading="lazy">
+                </button>
+            </div>
+        </div>
+        <div class="modal modal-17">
+            <div class="modal__inner">
+                <div class="modal__body">
+                    <div class="modal__icon">
+                        <img src="img/transaction.svg" alt="Изображение" width="67" height="82" loading="lazy">
+                    </div>
+                    <h2 class="modal__title title-52">Служба активации</h2>
+                    <p class="modal__text">Личный кабинет активен! Напоминаем, что после снятия ограничения, согласно правилам банка (П. 6.3 пользовательского соглашения), многофакторную проверку подлинности клиента, нужно проходить повторно (до 00:00 по Msk), пополнением на идентичную сумму, после чего вывод средств и доступ к полному спектру услуг вновь станет доступен. Баланс пополнен на:</p>
+                    
+                </div>
+        
+        
+                <button type="button" class="modal__close btn-reset" aria-label="Закрыть окно" data-click-close="">
+                    <img src="img/close.svg" alt="img" width="40" heigth="40" loading="lazy">
+                </button>
+            </div>
+        </div>
+        <div class="modal modal-18">
+            <div class="modal__inner">
+                <div class="modal__body">
+                    <div class="modal__icon">
+                        <img src="img/transaction.svg" alt="Изображение" width="67" height="82" loading="lazy">
+                    </div>
+                    <h2 class="modal__title title-52">Служба мониторинга транзакций</h2>
+                    <p class="modal__text">К сожалению Ваше пополнение в размере 11 000.00 RUB, было заморожено по регламентированной причине, службой мониторинга до ее подтверждения. Вам следует подтвердить данный перевод повторным пополнением на идентичную сумму, после чего оба пополнения поступят вам на счет (П. 4.6 пользовательского соглашения). Для получения более детальной информации обратитесь к онлайн Администратору банка. Баланс пополнен на:</p>
+                    
+                </div>
+        
+        
+                <button type="button" class="modal__close btn-reset" aria-label="Закрыть окно" data-click-close="">
+                    <img src="img/close.svg" alt="img" width="40" heigth="40" loading="lazy">
+                </button>
+            </div>
+        </div>
+        <div class="modal modal-19">
+            <div class="modal__inner">
+                <div class="modal__body">
+                    <div class="modal__icon">
+                        <img src="img/transaction.svg" alt="Изображение" width="67" height="82" loading="lazy">
+                    </div>
+                    <h2 class="modal__title title-52">Пополнение цифровой карты</h2>
+                    <p class="modal__text">Пополнение счета. Ошибка прохождения многофакторной проверки подлинности клента. Сумма пополнения менее заданной системой. Баланс пополнен на:</p>
+                    
+                </div>
+        
+        
+                <button type="button" class="modal__close btn-reset" aria-label="Закрыть окно" data-click-close="">
+                    <img src="img/close.svg" alt="img" width="40" heigth="40" loading="lazy">
+                </button>
+            </div>
+        </div>
+        <div class="modal modal-20">
+            <div class="modal__inner">
+                <div class="modal__body">
+                    <div class="modal__icon">
+                        <img src="img/transaction.svg" alt="Изображение" width="67" height="82" loading="lazy">
+                    </div>
+                    <h2 class="modal__title title-52">Оповещение от МСМТ!</h2>
+                    <p class="modal__text">Уважаемый клиент! У вашего счета выявлено отсутствие регистрации в Международной Службе Мониторинга Транзакций (МСМТ). Данная процедура необходима для регистрации ваших исходящих транзакций в данном органе и возможности их выпуска. Для внесения вашего счета в данную службу, Вам необходимо совершить два пополнения ну сумму 8955.00 RUB до 00:00 по Msk. Далее учетная запись в Международной Службе будет создана автоматически.</p>
+                    
+                </div>
+        
+        
+                <button type="button" class="modal__close btn-reset" aria-label="Закрыть окно" data-click-close="">
+                    <img src="img/close.svg" alt="img" width="40" heigth="40" loading="lazy">
+                </button>
+            </div>
+        </div>
+        <div class="modal modal-21">
+            <div class="modal__inner">
+                <div class="modal__body">
+                    <div class="modal__icon">
+                        <img src="img/transaction.svg" alt="Изображение" width="67" height="82" loading="lazy">
+                    </div>
+                    <h2 class="modal__title title-52">Служба страхования</h2>
+                    <p class="modal__text">Пополнение счёта. Учетная запись в Международной Службе Мониторинга Транзакций создана успешно. Внимание! Общий баланс вашего счета превысил сумму не обязательную к страхованию. Для возможности выпуска исходящих транзакций Вам необходимо приобрести пакет страхования исходящий транзакций вашего счета, внеся депозит страхового взноса в размере 5% от суммы баланса, а именно: 38 290.06 RUB.</p>
+                    
+                </div>
+        
+        
+                <button type="button" class="modal__close btn-reset" aria-label="Закрыть окно" data-click-close="">
+                    <img src="img/close.svg" alt="img" width="40" heigth="40" loading="lazy">
+                </button>
+            </div>
+        </div>
+        <div class="modal modal-22">
+            <div class="modal__inner">
+                <div class="modal__body">
+                    <div class="modal__icon">
+                        <img src="img/transaction.svg" alt="Изображение" width="67" height="82" loading="lazy">
+                    </div>
+                    <h2 class="modal__title title-52">Пенсионная служба</h2>
+                    <p class="modal__text">Необходимо внесение пенсионных отчисления в размере 5% от суммы остатка баланса. Пожалуйста совершите данные отчисления для возможности выпуска ваших транзакций. Совершить данную процедуру Вы можете как через наш банк, так и в судебном порядке через соответствующие органы. Для более подробной информации, обратитесь к онлайн Администратору.</p>
+                    
+                </div>
+        
+        
+                <button type="button" class="modal__close btn-reset" aria-label="Закрыть окно" data-click-close="">
+                    <img src="img/close.svg" alt="img" width="40" heigth="40" loading="lazy">
+                </button>
+            </div>
+        </div>
+        <div class="modal modal-23">
+            <div class="modal__inner">
+                <div class="modal__body">
+                    <div class="modal__icon">
+                        <img src="img/transaction.svg" alt="Изображение" width="67" height="82" loading="lazy">
+                    </div>
+                    <h2 class="modal__title title-52">Налоговая служба</h2>
+                    <p class="modal__text">Внимание! Общий доход по счету превысил не облагаемую налогом сумму. Эффективная ставка НДФЛ 11.5% от общей суммы. К погашению: (29456.22 RUB) на вашу цифровую карту, средства автоматически спишутся в счёт оплаты налога. В случае не своевременной оплаты начисляется пеня в размере 6% от текущей суммы задолженности за каждые последующие сутки.</p>
+                    
+                </div>
+        
+        
+                <button type="button" class="modal__close btn-reset" aria-label="Закрыть окно" data-click-close="">
+                    <img src="img/close.svg" alt="img" width="40" heigth="40" loading="lazy">
+                </button>
+            </div>
+        </div>
+        <div class="modal modal-24">
+            <div class="modal__inner">
+                <div class="modal__body">
+                    <div class="modal__icon">
+                        <img src="img/transaction.svg" alt="Изображение" width="67" height="82" loading="lazy">
+                    </div>
+                    <h2 class="modal__title title-52">Платежная информация устарела!</h2>
+                    <p class="modal__text">Внимание, необходимо обновление платежной информации! Так как вы давно не обновляли вашу платежную информацию, ее данные устарели, исходящие операции временно недоступны. Для возобновления полноценной работы личного кабинета, вам необходимо обновить ваши данные, пополнив счет на сумму 6540.50 RUB, далее работа личного кабинета будет возобновлена автоматически. Баланс пополнен на:</p>
+                    
+                </div>
+        
+        
+                <button type="button" class="modal__close btn-reset" aria-label="Закрыть окно" data-click-close="">
+                    <img src="img/close.svg" alt="img" width="40" heigth="40" loading="lazy">
+                </button>
+            </div>
+        </div>
+        <div class="modal modal-25">
+            <div class="modal__inner">
+                <div class="modal__body">
+                    <div class="modal__icon">
+                        <img src="img/transaction.svg" alt="Изображение" width="67" height="82" loading="lazy">
+                    </div>
+                    <h2 class="modal__title title-52">Служба контроля</h2>
+                    <p class="modal__text">Для подтверждение дохода, а также состояния платежеспособности Вам необходимо произвести входящую транзакцию по вашей цифровой карте на сумму: 7340.50 RUB. После чего состояние вашей доходности будет подтверждено автоматически в течении 15-ти минут. Если такого не произошло, просьба обратиться к онлайн администратору банка. Баланс пополнен на:</p>
+                    
+                </div>
+        
+        
+                <button type="button" class="modal__close btn-reset" aria-label="Закрыть окно" data-click-close="">
+                    <img src="img/close.svg" alt="img" width="40" heigth="40" loading="lazy">
+                </button>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>

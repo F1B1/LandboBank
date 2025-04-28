@@ -746,6 +746,54 @@ input[type="checkbox"] {
     margin: 0 8px 0 0;
 }
 
+  
+  
+input[type="range"] {
+    -webkit-appearance: none;
+    width: 100%;
+    height: #{fluid(2px, 4px, 375px, 1600px)};
+    background: var(--text-green);
+    border-radius: 3px;
+    outline: none;
+    position: relative;
+  }
+  
+  input[type="range"]::-webkit-slider-runnable-track {
+    height: #{fluid(2px, 4px, 375px, 1600px)};
+  }
+  
+  input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: #{fluid(3px, 6px, 375px, 1600px)};
+    height: #{fluid(3px, 6px, 375px, 1600px)};
+    background: var(--text-secondary);
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 0 0 #{fluid(2px, 3px, 375px, 1600px)} rgba(46, 204, 113, 1);
+    margin-top: -1px;
+    border: none;
+  }
+  
+  /* Firefox */
+  input[type="range"]::-moz-range-thumb {
+    width: #{fluid(3px, 6px, 375px, 1600px)};
+    height: #{fluid(3px, 6px, 375px, 1600px)};
+    background: var(--text-secondary);
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 0 0 #{fluid(2px, 3px, 375px, 1600px)} rgba(46, 204, 113, 1);
+    margin-top: -1px;
+    border: none;
+  }
+  
+  input[type="range"]::-moz-range-track {
+    height: #{fluid(2px, 4px, 375px, 1600px)};
+    background: var(--text-green);
+    border-radius: 3px;
+  }
+  
+
 .header {
     position: fixed;
     left: 0;
@@ -1073,6 +1121,9 @@ input[type="checkbox"] {
 
     &__title {
         margin-bottom: 16px;
+        @include small-tablet(){
+            text-align: center;
+        }
     }
 
     &__text {
@@ -1081,6 +1132,9 @@ input[type="checkbox"] {
         font-size: #{fluid(12px, 16px, 375px, 1600px)};
         font-weight: 400;
         line-height: 1.5;
+        @include small-tablet(){
+            text-align: center;
+        }
     }
 
     &__button {
@@ -1189,6 +1243,10 @@ input[type="checkbox"] {
     }
 
     &__text {
+        text-align: center;
+        font-size: 12px;
+        font-weight: 500;
+        letter-spacing: 0;
     }
 }
 
@@ -1232,11 +1290,13 @@ input[type="checkbox"] {
     &__text {
         color: var(--text-gray);
         font-size: #{fluid(12px, 16px, 375px, 1600px)};
+        line-height: 1.5;
     }
 
     &__button {
         margin-top: 48px;
         max-width: 230px;
+        gap: 8px;
         @include small-tablet(){
             margin: 24px auto 0px;
         }
@@ -1270,6 +1330,7 @@ input[type="checkbox"] {
 }
 
 .services {
+    margin-bottom: 48px;
 
     &__container {
     }
@@ -1317,9 +1378,10 @@ input[type="checkbox"] {
     }
 
     &__subtitle {
-        line-height: 2;
+        line-height: 1.5;
         font-weight: 700;
         font-size: 16px;
+        margin-bottom: 4px; 
     }
 
     &__list {
@@ -1337,11 +1399,12 @@ input[type="checkbox"] {
     &__button {
         margin-top: auto;
         padding: 0 36px;
+        font-weight: 700;   
     }
 }
 
 .reviews {
-
+    margin: 48px 0;
     &__container {
     }
 
@@ -1570,7 +1633,7 @@ input[type="checkbox"] {
 
     &__title {
         text-align: center;
-        font-size: #{fluid(48px, 64px, 375px, 1600px)};
+        font-size: #{fluid(32px, 64px, 375px, 1600px)};
         font-weight: 700;
         margin-bottom: 32px;
     }
@@ -1626,9 +1689,6 @@ input[type="checkbox"] {
 .sidebar {
     background: var(--bg-darkgradient);
     z-index: 100;
-    // height: 100%;
-    // max-height: -webkit-fill-available;
-    // max-height: fill-available;
     max-width: 100%;
     min-width: 256px;
     display: inline-block;
@@ -1670,8 +1730,10 @@ input[type="checkbox"] {
         align-items:center;
         justify-content: space-between;
         gap: 8px;
-        margin-top: 48px;
         margin-bottom: 36px;
+        @include tablet(){
+            margin-top: 48px;
+        }
     }
 
     &__logo {
@@ -1719,6 +1781,16 @@ input[type="checkbox"] {
             &::after{
                 opacity: 1;
             }
+        }
+    }
+
+    .info__list{
+        max-width: 170px;
+        margin: 0px auto;
+        display: none;
+        @include tablet(){
+            display: flex;
+            margin-bottom: 64px;
         }
     }
 
@@ -1933,6 +2005,7 @@ input[type="checkbox"] {
         display: flex;
         align-items: flex-start;
         justify-content: space-between;
+        gap: 8px;
         @include tablet(){
             display: none;
             font-size: 16px;
@@ -2006,7 +2079,7 @@ input[type="checkbox"] {
         h3{
             margin-bottom: 16px;
         }
-        p{
+        .content__text{
             line-height: 2;
             margin: 0px auto 24px;
 
@@ -2035,7 +2108,7 @@ input[type="checkbox"] {
         column-gap: 24px;
         border-bottom: 1px solid rgba(228, 228, 228, 1);
         @include small-tablet(){
-            padding: 32px 0px 54px;
+            padding: 52px 0px 34px;
         }
     }
 
@@ -2210,7 +2283,8 @@ input[type="checkbox"] {
             margin-bottom: 8px;
         }
         .content__button{
-            max-width: 112px;
+            padding: 0 20px;
+            max-width: unset;
         }
     }
 
@@ -2238,6 +2312,199 @@ input[type="checkbox"] {
             border: 1px solid transparent;
             font-size: #{fluid(8px, 12px, 375px, 1600px)};
             padding: 11px 14px;
+        }
+    }
+
+    &__pending {
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+        align-items: center;
+        background-color: var(--text-secondary);
+        border-radius: 24px;
+        padding: #{fluid(20px, 40px, 375px, 1600px)};
+        box-shadow: 0px 0px 20px -15px #000;
+        max-width: 600px;
+        margin-top: #{fluid(32px, 128px, 375px, 1600px)};
+    }
+
+    &__pending-icon {
+        display: flex;
+        justify-content:center;
+        align-items: center;
+        width: #{fluid(54px, 100px, 375px, 1600px)};
+        height: #{fluid(54px, 100px, 375px, 1600px)};
+        border-radius: 50%;
+        background-color: rgba(243, 243, 249, 1);
+        margin-bottom: #{fluid(32px, 56px, 375px, 1600px)};
+        img{
+            width: #{fluid(26px, 48px, 375px, 1600px)};
+            height: #{fluid(26px, 48px, 375px, 1600px)};
+        }
+    }
+
+    &__pending-text {
+        font-size: #{fluid(12px, 24px, 375px, 1600px)};
+        letter-spacing: 0;
+        font-weight: 400;
+        color: rgba(112, 112, 112, 1);
+        text-align: center;
+    }
+
+    &__custom-select{
+        position: relative;
+        max-width: 170px;
+        select{
+            appearance: none;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            background: none;
+            width: 100%;
+        }
+        &::after{
+            content:'';
+            position: absolute;
+            right: 26px;
+            top: 50%;
+            width: 10px;
+            height: 10px;
+            background: url('../img/arrow.svg') no-repeat center;
+            background-size: contain;
+            transform: translateY(-50%);
+            pointer-events: none;
+        }
+    }
+
+    &__card{
+        background-color: rgba(238, 238, 244, 1);
+        border-radius: 24px;
+        padding: 28px 20px;
+        h3{
+            margin-bottom: 16px;
+            font-size: #{fluid(10px, 19px, 375px, 1600px)};
+        }
+        input, select{
+            background-color: var(--text-secondary);
+            min-height: 57px;
+            font-size: #{fluid(8px, 12px, 375px, 1600px)};
+        }
+        select{
+            padding: 0 26px;
+            border: none;
+            border-radius: 12px;
+            outline: none;
+            font-weight: 500;
+            color: rgba(17, 20, 45, 1);
+        }
+        .checkbox{
+            display: flex;
+            align-items:center;
+            position: relative;
+            gap: 8px;
+            
+            input{
+                position: absolute;
+                opacity: 0;
+                &:checked~.checkbox__custom{
+                    border-color: transparent;
+                    background: var(--text-green);
+                    &::after{
+                        opacity: 1;
+                    }
+                }
+            }
+            .checkbox__custom{
+                position: relative;
+                flex: 0 0 24px;
+                border: 2px solid var(--text-gray);
+                border-radius: 8px;
+                width: 24px;
+                height: 24px;
+                transition: background var(--trans), border var(--trans);
+                &::after{
+                    content: "";
+                    position: absolute;
+                    left: 50%;
+                    top: 50%;
+                    width: 80%;
+                    height: 80%;
+                    background-image: url('../img/check.svg');
+                    background-position: center;
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    opacity: 0;
+                    transform: translate(-50%, -50%);
+                    transition: opacity var(--trans);
+                }
+            }
+            .checkbox__text{
+                font-size: #{fluid(8px, 12px, 375px, 1600px)};
+            }
+        }
+        .content__button{
+            margin-left: auto;
+            width: #{fluid(68px, 124px, 375px, 1600px)};
+            font-weight: 500;
+            font-size: #{fluid(8px, 12px, 375px, 1600px)};
+            min-height: #{fluid(18px, 34px, 375px, 1600px)};
+        }
+    }
+
+    &__inputs{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 16px;
+        margin-bottom: 16px;
+        .content__input-name{
+            grid-column:  -1/1;
+        }
+    }
+
+    &__slider{
+        background-color: rgba(238, 238, 244, 1);
+        border-radius: 24px;
+        padding: #{fluid(16px, 28px, 375px, 1600px)} #{fluid(10px, 20px, 375px, 1600px)};
+        margin-bottom: 24px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: #{fluid(36px, 64px, 375px, 1600px)};
+        row-gap: #{fluid(8px, 16px, 375px, 1600px)};
+        h3{
+            font-size: #{fluid(10px, 18px, 375px, 1600px)};
+            font-weight: 400;
+            opacity: .3;
+            text-align: left;
+            margin-bottom: 16px;
+        }
+        input{
+            margin-bottom: 8px;
+        }
+        .slider-value {
+            font-size: #{fluid(10px, 18px, 375px, 1600px)};
+            margin-bottom: 16px;
+            font-weight: 700;
+        }
+        .slider-text{
+            font-size: #{fluid(6px, 12px, 375px, 1600px)};
+            opacity: .3;
+        }
+        .slider-label{
+            display: flex;
+            flex-direction: column;
+            &:not(:last-child) {margin-bottom: 16px;};
+            &-big{
+                grid-column:  -1/1;
+            }
+        }
+        .slider-sum{
+            font-size: #{fluid(20px, 40px, 375px, 1600px)};
+            font-weight: 700;
+            line-height: 1.3;
+            letter-spacing: 0;
+            span{
+                color: rgba(255, 159, 56, 1);
+                font-weight: 500;
+            }
         }
     }
 }
@@ -2312,7 +2579,9 @@ input[type="checkbox"] {
         gap: 16px;
         font-size: 14px;
         line-height: 2;
+        letter-spacing: 0;
         font-weight: 500;
+        color: rgba(128, 129, 145, 1);
     }
 
     &__arrow {
@@ -2349,6 +2618,8 @@ input[type="checkbox"] {
         font-size: 14px;
         line-height: 2;
         font-weight: 500;
+        letter-spacing: 0   ;
+        color: rgba(128, 129, 145, 1);
     }
 
     &__name {
@@ -2466,3 +2737,259 @@ input[type="checkbox"] {
     }
 }
 
+.transaction {
+    margin-bottom: 80px;
+    &__body {
+        border-radius: 20px;
+        padding: 60px #{fluid(20px, 40px, 375px, 1600px)};
+        box-shadow: 0px 0px 20px -15px #000;
+        max-width: 575px;
+        margin: 0px auto;
+    }
+
+    &__icon {
+        display: flex;
+        justify-content:center;align-items: center;
+        width: #{fluid(54px, 100px, 375px, 1600px)};
+        height: #{fluid(54px, 100px, 375px, 1600px)};
+        border-radius: 50%;
+        background-color: rgba(243, 243, 249, 1);
+        margin: 0px auto #{fluid(18px, 32px, 375px, 1600px)};
+        img{
+            width: 50%;
+            height: 50%;
+            object-fit: contain;
+        }
+    }
+
+    &__status {
+        font-size: #{fluid(18px, 33px, 375px, 1600px)};
+        font-weight: 700;
+        letter-spacing: 0;
+        text-align: center;
+        margin-bottom: #{fluid(32px, 54px, 375px, 1600px)};
+    }
+
+    &__line {
+        width: 100%;
+        border-bottom: 1px dashed rgba(232, 234, 237, 1);
+        margin-bottom: #{fluid(14px, 26px, 375px, 1600px)};
+    }
+
+    &__line-ligth {
+        border-bottom: 2px dashed rgba(220, 222, 224, 1);
+    }
+
+    &__field {
+        display: flex;
+        justify-content: space-between;
+        align-items:center;
+        margin-bottom: #{fluid(14px, 26px, 375px, 1600px)};
+    }
+
+    &__label {
+        font-size: #{fluid(12px, 22px, 375px, 1600px)};
+        letter-spacing: 0;
+        color: rgba(112, 112, 112, 1);
+        font-weight: 400;
+    }
+
+    &__value {
+        font-size: #{fluid(12px, 22px, 375px, 1600px)};
+        letter-spacing: 0;
+        color: rgba(18, 18, 18, 1);
+        font-weight: 500;
+    }
+
+    &__image {
+        display: flex;
+        justify-content: center;
+        margin-bottom: #{fluid(16px, 24px, 375px, 1600px)};
+        img{
+            width: #{fluid(150px, 265px, 375px, 1600px)};
+        }
+    }
+
+    &__text {
+        font-size: #{fluid(12px, 22px, 375px, 1600px)};
+        letter-spacing: 0;
+        color: rgba(112, 112, 112, 1);
+        font-weight: 400;
+        &:not(:last-child) {margin-bottom: #{fluid(14px, 26px, 375px, 1600px)};};
+    }
+}
+
+.modal {
+    display: flex;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 22;
+    background: rgba(13, 18, 23, 0.5);
+    overflow: hidden;
+    overflow-y: auto;
+    opacity: 0;
+    visibility: hidden;
+    user-select: none;
+    pointer-events: none;
+    transition:
+        opacity var(--trans),
+        visibility var(--trans);
+
+    &.show {
+        opacity: 1;
+        visibility: visible;
+        pointer-events: initial;
+        user-select: initial;
+    }
+    &__inner {
+        margin: auto;
+        position: relative;
+        display: flex;
+        padding: #{fluid(54px, 128px, 375px, 1600px)} #{fluid(14px, 36px, 375px, 1600px)};
+        max-width: #{fluid(232px, 575px, 375px, 1600px)};
+        width: 100%;
+        background-color: var(--text-secondary);
+        transform: scale(0.6);
+        transition: transform var(--trans);
+        border-radius: #{fluid(12px, 20px, 375px, 1600px)};
+    }
+
+    &.show &__inner {
+        transform: scale(1);
+    }
+
+    &__body {
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+        width: 100%;
+    }
+
+    &__icon {
+        display: flex;
+        justify-content:center;align-items: center;
+        width: #{fluid(59px, 136px, 375px, 1600px)};
+        height: #{fluid(59px, 136px, 375px, 1600px)};
+        border-radius: 50%;
+        background-color: rgba(243, 243, 249, 1);
+        margin-bottom: #{fluid(32px, 64px, 375px, 1600px)};
+        img{
+            width: 50%;
+            height: 50%;
+            object-fit: contain;
+        }
+    }
+
+    &__title {
+        font-size: #{fluid(20px, 50px, 375px, 1600px)};
+        letter-spacing: 0;
+        text-align: center;
+        font-weight: 700;
+        color: rgba(18, 18, 18, 1);
+        margin-bottom: #{fluid(14px, 36px, 375px, 1600px)};
+    }
+
+    &__text {
+        line-height: 2;
+        font-weight: 400;
+        font-size: #{fluid(10px, 24px, 375px, 1600px)};
+        text-align: center;
+        color: rgba(75, 85, 99, 1);
+    }
+
+    &__button {
+        font-size: #{fluid(9px, 16px, 375px, 1600px)};
+        font-weight: 700;
+        width: 100%;
+        min-height: #{fluid(24px, 48px, 375px, 1600px)};
+        margin-top: #{fluid(8px, 26px, 375px, 1600px)};
+    }
+
+    &__close {
+        position: absolute;
+        right: #{fluid(14px, 36px, 375px, 1600px)};
+        top: #{fluid(14px, 36px, 375px, 1600px)};
+        width: #{fluid(14px, 26px, 375px, 1600px)};
+        height: #{fluid(14px, 26px, 375px, 1600px)};
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+[class^="modal modal-error"] {
+    .modal__inner{
+        padding: #{fluid(16px, 56px, 375px, 1600px)} #{fluid(12px, 40px, 375px, 1600px)};
+    }
+    .modal__body{
+        align-items: flex-start;
+    }
+    h2{
+        font-size: #{fluid(12px, 32px, 375px, 1600px)};
+        margin-bottom: 16px;
+    }
+    p{
+        font-size: #{fluid(8px, 16px, 375px, 1600px)};
+        font-weight: 400;
+        line-height: 1.5;
+        margin-bottom: #{fluid(8px, 24px, 375px, 1600px)};
+        text-align: left;
+    }
+}
+
+[class^="modal modal-transfer"]{
+    .modal__inner{
+        padding: #{fluid(16px, 55px, 375px, 1600px)} #{fluid(10px, 40px, 375px, 1600px)};
+        padding-top: #{fluid(42px, 74px, 375px, 1600px)};
+        max-width: #{fluid(232px, 814px, 375px, 1600px)};
+    }
+    .modal__fields{
+        width: 100%;
+        display: flex;
+        align-items:center;
+        justify-content: space-evenly;
+    }
+    h2{
+        font-size: #{fluid(12px, 32px, 375px, 1600px)};
+        line-height: 1;
+    }
+    .modal__text{
+        font-size: #{fluid(4px, 10px, 375px, 1600px)};
+        line-height: 1.5;
+        letter-spacing: 0;
+        color: rgba(92, 92, 92, 1);
+        font-weight: 400;
+        text-align: left;
+        margin-bottom: 8px;
+    }
+    .input{
+        padding: 0;
+        width: #{fluid(50px, 175px, 375px, 1600px)};
+        img{
+            &:nth-last-child(2){
+                width: #{fluid(4px, 12px, 375px, 1600px)};
+            }
+            &:last-child{
+                margin-right: 10px;
+                width: #{fluid(4px, 8px, 375px, 1600px)};
+            }
+        }
+    }
+    input{
+        font-size: #{fluid(4px, 10px, 375px, 1600px)};
+        min-height: #{fluid(10px, 38px, 375px, 1600px)};
+        padding: 0 #{fluid(8px, 16px, 375px, 1600px)};
+    }
+    .modal__buttons{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        gap: 16px;
+        button{
+            width: 142px
+        }
+    }
+}

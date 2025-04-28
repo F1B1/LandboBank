@@ -29,248 +29,310 @@
             </header>
             <aside class="sidebar">
                 <div class="sidebar__container">
-                    <div class="sidebar__header">
-                        <a href="#" class="sidebar__logo">
-                            <img src="img/logo-white.svg" alt="img" width="145" heigth="24" loading="lazy">
+                  <div class="sidebar__header">
+                    <a href="#" class="sidebar__logo">
+                      <img src="img/logo-white.svg" alt="img" width="145" height="24" loading="lazy">
+                    </a>
+                    <button type="button" class="icon-menu btn-reset menu-close" aria-label="menu"><span></span></button>
+                  </div>
+                  <nav class="sidebar__menu">
+                    <ul class="sidebar__list list-reset">
+                      <li class="sidebar__item">
+                        <a href="#" class="sidebar__link">
+                          <img src="img/wallet.svg" alt="img" width="24" height="24" loading="lazy">
+                          <span data-i18n="sidebar.myFinance">My finance</span>
                         </a>
-                        <button type="button" class="icon-menu btn-reset menu-close" aria-label="menu"><span></span></button>
+                      </li>
+                      <li class="sidebar__item">
+                        <a href="#" class="sidebar__link ">
+                          <img src="img/wallte-time.svg" alt="img" width="24" height="24" loading="lazy">
+                          <span data-i18n="sidebar.lendingServices">Lending services</span>
+                        </a>
+                      </li>
+                      <li class="sidebar__item">
+                        <a href="#" class="sidebar__link active">
+                          <img src="img/blocks.svg" alt="img" width="24" height="24" loading="lazy">
+                          <span data-i18n="sidebar.services">Services</span>
+                        </a>
+                      </li>
+                      <li class="sidebar__item">
+                        <a href="#" class="sidebar__link">
+                          <img src="img/convert.svg" alt="img" width="24" height="24" loading="lazy">
+                          <span data-i18n="sidebar.currencyConversion">Currency convertation</span>
+                        </a>
+                      </li>
+                      <li class="sidebar__item">
+                        <a href="#" class="sidebar__link">
+                          <img src="img/invest.svg" alt="img" width="24" height="24" loading="lazy">
+                          <span data-i18n="sidebar.investments">Investments</span>
+                        </a>
+                      </li>
+                      <li class="sidebar__item">
+                        <a href="#" class="sidebar__link">
+                          <img src="img/profile.svg" alt="img" width="24" height="24" loading="lazy">
+                          <span data-i18n="sidebar.myProfile">My profile</span>
+                        </a>
+                      </li>
+                      <li class="sidebar__item">
+                        <a href="#" class="sidebar__link">
+                          <img src="img/notification-bing.svg" alt="img" width="24" height="24" loading="lazy">
+                          <span data-i18n="sidebar.notifications">Notifications</span>
+                        </a>
+                      </li>
+                      <li class="sidebar__item">
+                        <a href="#" class="sidebar__link">
+                          <img src="img/setting.svg" alt="img" width="24" height="24" loading="lazy">
+                          <span data-i18n="sidebar.settings">Settings</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </nav>
+                  <ul class="info__list info__list-language list-reset">
+                    <li class="info__item-language">
+                      <a href="#" class="info__link-language" data-lang="en">
+                        <img src="img/en.svg" alt="English" width="21" height="15" loading="lazy">
+                        <span data-i18n="language.english">English</span>
+                      </a>    
+                      <img class="info__arrow" src="img/arrow.svg" alt="Toggle language menu" width="12" height="12" loading="lazy">
+                      <ul class="info__sub-menu list-reset">
+                        <li class="info__sub-item">
+                          <a href="#" class="info__sub-link" data-lang="en">
+                            <img src="img/en.svg" alt="English" width="21" height="15" loading="lazy">
+                            <span data-i18n="language.english">English</span>
+                          </a>
+                        </li>
+                        <li class="info__sub-item">
+                          <a href="#" class="info__sub-link" data-lang="ru">
+                            <img src="img/ru.svg" alt="Russian" width="21" height="15" loading="lazy">
+                            <span data-i18n="language.russian">Russian</span>
+                          </a>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                  <div class="sidebar__cards">
+                    <div class="sidebar__card">
+                      <div class="sidebar__card-header">
+                        <h3 class="sidebar__card-name" data-i18n="sidebar.bankName">LandboBank</h3>
+                        <div class="sidebar__card-logo">
+                          <img src="img/logo-card.svg" alt="img" width="14" height="14" loading="lazy">
+                        </div>
+                      </div>
+                      <div class="sidebar__card-visual">
+                        <div class="sidebar__card-number" data-full-number="1234 5678 9012">
+                          <span>**** **** ****</span> 0329
+                        </div>
+                        <div class="sidebar__card-hide">
+                          <img src="img/eye-hide.svg" alt="img" width="17" height="17" loading="lazy">
+                        </div>
+                      </div>
+                      <div class="sidebar__card-info">
+                        <div class="sidebar__card-block">
+                          <p class="sidebar__card-text" data-i18n="sidebar.cardHolder">Card Holder Name</p>
+                          <h3 class="sidebar__card-subtitle">JOHN DOE</h3>
+                        </div>
+                        <div class="sidebar__card-block">
+                          <p class="sidebar__card-text" data-i18n="sidebar.expiredDate">Expired Date</p>
+                          <h3 class="sidebar__card-subtitle">10/28</h3>
+                        </div>
+                        <div class="sidebar__card-system">
+                          <img src="img/mastercard.svg" alt="img" width="30" height="18" loading="lazy">
+                        </div>
+                      </div>
+                      <div class="sidebar__card-image">
+                        <img src="img/card-small01.png" alt="img" width="216" height="137" loading="lazy">
+                      </div>
                     </div>
-                    <nav class="sidebar__menu">
-                        <ul class="sidebar__list list-reset">
-                            <li class="sidebar__item active"><a href="#" class="sidebar__link" data-i18n="sidebar.myFinance">
-                                <img src="img/wallet.svg" alt="img" width="24" heigth="24" loading="lazy"> My finance
-                            </a></li>
-                            <li class="sidebar__item"><a href="#" class="sidebar__link active">
-                                <img src="img/wallte-time.svg" alt="img" width="24" heigth="24" loading="lazy"> Lending services
-                            </a></li>
-                            <li class="sidebar__item"><a href="#" class="sidebar__link">
-                                <img src="img/blocks.svg" alt="img" width="24" heigth="24" loading="lazy"> Services
-                            </a></li>
-                            <li class="sidebar__item"><a href="#" class="sidebar__link">
-                                <img src="img/convert.svg" alt="img" width="24" heigth="24" loading="lazy"> Currency convertation
-                            </a></li>
-                            <li class="sidebar__item"><a href="#" class="sidebar__link">
-                                <img src="img/invest.svg" alt="img" width="24" heigth="24" loading="lazy"> Investments
-                            </a></li>
-                            <li class="sidebar__item"><a href="#" class="sidebar__link">
-                                <img src="img/profile.svg" alt="img" width="24" heigth="24" loading="lazy"> My profile
-                            </a></li>
-                            <li class="sidebar__item"><a href="#" class="sidebar__link">
-                                <img src="img/notification-bing.svg" alt="img" width="24" heigth="24" loading="lazy"> Notifications
-                            </a></li>
-                            <li class="sidebar__item"><a href="#" class="sidebar__link">
-                                <img src="img/setting.svg" alt="img" width="24" heigth="24" loading="lazy"> Settings
-                            </a></li>
-                        </ul>
-                    </nav>
-                    <div class="sidebar__cards">
-                        <div class="sidebar__card">
-                            <div class="sidebar__card-header">
-                                <h3 class="sidebar__card-name">LandboBank</h3>
-                                <div class="sidebar__card-logo">
-                                    <img src="img/logo-card.svg" alt="img" width="14" heigth="14" loading="lazy">
-                                </div>
-                            </div>
-                            <div class="sidebar__card-visual">
-                                <div class="sidebar__card-number">
-                                    <span>**** **** ****</span> 0329
-                                </div>
-                                <div class="sidebar__card-hide">
-                                    <img src="img/eye-hide.svg" alt="img" width="17" heigth="17" loading="lazy">
-                                </div>
-                            </div>
-                            <div class="sidebar__card-info">
-                                <div class="sidebar__card-block">
-                                    <p class="sidebar__card-text">Card Holder Name</p>
-                                    <h3 class="sidebar__card-subtitle">JOHN DOE</h3>
-                                </div>
-                                <div class="sidebar__card-block">
-                                    <p class="sidebar__card-text">Expired Date</p>
-                                    <h3 class="sidebar__card-subtitle">10/28</h3>
-                                </div>
-                                <div class="sidebar__card-system">
-                                    <img src="img/mastercard.svg" alt="img" width="30" heigth="18" loading="lazy">
-                                </div>
-                            </div>
-                            <div class="sidebar__card-image">
-                                <img src="img/card-small01.png" alt="img" width="216" heigth="137" loading="lazy">
-                            </div>
+                    <div class="sidebar__card sidebar__card-lock">
+                      <div class="sidebar__card-header">
+                        <h3 class="sidebar__card-name" data-i18n="sidebar.bankName">LandboBank</h3>
+                        <div class="sidebar__card-logo">
+                          <img src="img/logo-card.svg" alt="img" width="14" height="14" loading="lazy">
                         </div>
-                        <div class="sidebar__card sidebar__card-lock">
-                            <div class="sidebar__card-header">
-                                <h3 class="sidebar__card-name">LandboBank</h3>
-                                <div class="sidebar__card-logo">
-                                    <img src="img/logo-card.svg" alt="img" width="14" heigth="14" loading="lazy">
-                                </div>
-                            </div>
-                            <div class="sidebar__card-visual">
-                                <div class="sidebar__card-number">
-                                    <span>**** **** ****</span> 0329
-                                </div>
-                                <div class="sidebar__card-hide">
-                                    <img src="img/eye-hide.svg" alt="img" width="17" heigth="17" loading="lazy">
-                                </div>
-                            </div>
-                            <div class="sidebar__card-info">
-                                <div class="sidebar__card-block">
-                                    <p class="sidebar__card-text">Card Holder Name</p>
-                                    <h3 class="sidebar__card-subtitle">JOHN DOE</h3>
-                                </div>
-                                <div class="sidebar__card-block">
-                                    <p class="sidebar__card-text">Expired Date</p>
-                                    <h3 class="sidebar__card-subtitle">10/28</h3>
-                                </div>
-                                <div class="sidebar__card-system">
-                                    <img src="img/mastercard.svg" alt="img" width="30" heigth="18" loading="lazy">
-                                </div>
-                            </div>
-                            <div class="sidebar__card-image">
-                                <img src="img/card-small02.png" alt="img" width="216" heigth="137" loading="lazy">
-                            </div>
-                            <a href="#" class="sidebar__card-button btn btn-reset">Checkout product</a>
+                      </div>
+                      <div class="sidebar__card-visual">
+                        <div class="sidebar__card-number" data-full-number="1234 5678 9012">
+                          <span>**** **** ****</span> 0329
                         </div>
+                        <div class="sidebar__card-hide">
+                          <img src="img/eye-hide.svg" alt="img" width="17" height="17" loading="lazy">
+                        </div>
+                      </div>
+                      <div class="sidebar__card-info">
+                        <div class="sidebar__card-block">
+                          <p class="sidebar__card-text" data-i18n="sidebar.cardHolder">Card Holder Name</p>
+                          <h3 class="sidebar__card-subtitle">JOHN DOE</h3>
+                        </div>
+                        <div class="sidebar__card-block">
+                          <p class="sidebar__card-text" data-i18n="sidebar.expiredDate">Expired Date</p>
+                          <h3 class="sidebar__card-subtitle">10/28</h3>
+                        </div>
+                        <div class="sidebar__card-system">
+                          <img src="img/mastercard.svg" alt="img" width="30" height="18" loading="lazy">
+                        </div>
+                      </div>
+                      <div class="sidebar__card-image">
+                        <img src="img/card-small02.png" alt="img" width="216" height="137" loading="lazy">
+                      </div>
+                      <a href="#" class="sidebar__card-button btn btn-reset" data-i18n="sidebar.checkoutProduct">Checkout product</a>
                     </div>
-                    <div class="sidebar__rate">
-                        <div class="sidebar__rate-column">
-                            <p class="sidebar__rate-name">Purchase</p>
-                            <div class="sidebar__rate-currency sidebar__rate-currency-buy">
-                                <img src="img/usdt.svg" alt="img" width="7" heigth="13" loading="lazy">
-                                <span>90.77</span>
-                            </div>
-                            <div class="sidebar__rate-currency sidebar__rate-currency-buy">
-                                <img src="img/euro.svg" alt="img" width="10" heigth="12" loading="lazy">
-                                <span>97.57</span>
-                            </div>
-                        </div>
-                        <div class="sidebar__rate-column">
-                            <p class="sidebar__rate-name">Sale</p>
-                            <div class="sidebar__rate-currency sidebar__rate-currency-sell">
-                                <span>92.61</span>
-                            </div>
-                            <div class="sidebar__rate-currency sidebar__rate-currency-sell">
-                                <span>99.55</span>
-                            </div>
-                        </div>
+                  </div>
+                  <div class="sidebar__rate">
+                    <div class="sidebar__rate-column">
+                      <p class="sidebar__rate-name" data-i18n="sidebar.purchase">Purchase</p>
+                      <div class="sidebar__rate-currency sidebar__rate-currency-buy">
+                        <img src="img/usdt.svg" alt="img" width="7" height="13" loading="lazy">
+                        <span>90.77</span>
+                      </div>
+                      <div class="sidebar__rate-currency sidebar__rate-currency-buy">
+                        <img src="img/euro.svg" alt="img" width="10" height="12" loading="lazy">
+                        <span>97.57</span>
+                      </div>
                     </div>
+                    <div class="sidebar__rate-column">
+                      <p class="sidebar__rate-name" data-i18n="sidebar.sale">Sale</p>
+                      <div class="sidebar__rate-currency sidebar__rate-currency-sell">
+                        <span>92.61</span>
+                      </div>
+                      <div class="sidebar__rate-currency sidebar__rate-currency-sell">
+                        <span>99.55</span>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-            </aside>
+              </aside>
             <main class="main">
                 <section class="content">
                     <div class="content__container">
-                        <div class="content__alert">
-                            <p>Dear customers of the bank! At the moment, the callback order is available only to residents of the European Union. In other cases, customer service is provided via online chat in the bank's personal account.</p>
-                            <div class="content__alert-close">
-                                <img src="img/close.svg" alt="img" width="14" heigth="14" loading="lazy">
-                            </div>
-                        </div>
-                        <div class="content__body">
-                            <h2 class="content__title">
-                                <img src="img/service.svg" alt="img" width="38" heigth="38" loading="lazy"> Services
-                            </h2>
-                            <div class="content__columns ">
-                                <div class="content__column">
-                                    <h3 class="content__subtitle">Cinemas</h3>
-                                    <div class="content__image">
-                                        <img src="img/service01.png" alt="img" width="185" heigth="143" loading="lazy">
-                                    </div>
-                                    <a href="#" class="content__button btn btn-reset">Find out more</a>
-                                </div>
-                                <div class="content__column">
-                                    <h3 class="content__subtitle">Аirline tickets</h3>
-                                    <div class="content__image">
-                                        <img src="img/service02.png" alt="img" width="185" heigth="143" loading="lazy">
-                                    </div>
-                                    <a href="#" class="content__button btn btn-reset">Find out more</a>
-                                </div>
-                                <div class="content__column">
-                                    <h3 class="content__subtitle">Insurance policies</h3>
-                                    <div class="content__image">
-                                        <img src="img/service03.png" alt="img" width="185" heigth="143" loading="lazy">
-                                    </div>
-                                    <a href="#" class="content__button btn btn-reset">Find out more</a>
-                                </div>
-                                <div class="content__column">
-                                    <h3 class="content__subtitle">Ordering a plastic bank card</h3>
-                                    <div class="content__image">
-                                        <img src="img/service04.png" alt="img" width="185" heigth="143" loading="lazy">
-                                    </div>
-                                    <a href="#" class="content__button btn btn-reset">Find out more</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-               <aside class="info">
-                <div class="info__container">
-                    <div class="content__alert">
-                        <p>Dear customers of the bank! At the moment, the callback order is available only to residents of the European Union. In other cases, customer service is provided via online chat in the bank's personal account.</p>
+                      <div class="content__alert">
+                        <p data-i18n="alert.message">
+                          Dear customers of the bank! At the moment, the callback order is available only to residents of the European Union. In other cases, customer service is provided via online chat in the bank's personal account.
+                        </p>
                         <div class="content__alert-close">
-                            <img src="img/close.svg" alt="img" width="14" heigth="14" loading="lazy">
+                          <img src="img/close.svg" alt="img" width="14" height="14" loading="lazy">
                         </div>
+                      </div>
+                  
+                      <div class="content__body">
+                        <h2 class="content__title">
+                          <img src="img/service.svg" alt="img" width="38" height="38" loading="lazy">
+                          <span data-i18n="title.services">Services</span>
+                        </h2>
+                  
+                        <div class="content__columns">
+                          <div class="content__column">
+                            <h3 class="content__subtitle" data-i18n="subtitle.cinemas">Cinemas</h3>
+                            <div class="content__image">
+                              <img src="img/service01.png" alt="img" width="185" height="143" loading="lazy">
+                            </div>
+                            <a href="#" class="content__button btn btn-reset" data-i18n="button.findOutMore">Find out more</a>
+                          </div>
+                  
+                          <div class="content__column">
+                            <h3 class="content__subtitle" data-i18n="subtitle.airlineTickets">Airline tickets</h3>
+                            <div class="content__image">
+                              <img src="img/service02.png" alt="img" width="185" height="143" loading="lazy">
+                            </div>
+                            <a href="#" class="content__button btn btn-reset" data-i18n="button.findOutMore">Find out more</a>
+                          </div>
+                  
+                          <div class="content__column">
+                            <h3 class="content__subtitle" data-i18n="subtitle.insurancePolicies">Insurance policies</h3>
+                            <div class="content__image">
+                              <img src="img/service03.png" alt="img" width="185" height="143" loading="lazy">
+                            </div>
+                            <a href="#" class="content__button btn btn-reset" data-i18n="button.findOutMore">Find out more</a>
+                          </div>
+                  
+                          <div class="content__column">
+                            <h3 class="content__subtitle" data-i18n="subtitle.orderPlasticCard">Ordering a plastic bank card</h3>
+                            <div class="content__image">
+                              <img src="img/service04.png" alt="img" width="185" height="143" loading="lazy">
+                            </div>
+                            <a href="#" class="content__button btn btn-reset" data-i18n="button.findOutMore">Find out more</a>
+                          </div>
+                        </div>
+                      </div>
                     </div>
-                    <div class="info__header">
+                  </section>
+                  
+                <aside class="info">
+                    <div class="info__container">
+                      <div class="content__alert">
+                        <p data-i18n="info.alertMessage">Dear customers of the bank! At the moment, the callback order is available only to residents of the European Union. In other cases, customer service is provided via online chat in the bank's personal account.</p>
+                        <div class="content__alert-close">
+                          <img src="img/close.svg" alt="Close" width="14" height="14" loading="lazy">
+                        </div>
+                      </div>
+                      <div class="info__header">
                         <div class="info__notification">
-                            <img src="img/notification-bing.svg" alt="img" width="24" heigth="24" loading="lazy">
-                            <span></span>
+                          <img src="img/notification-bing.svg" alt="Notifications" width="24" height="24" loading="lazy">
+                          <span></span>
                         </div>
                         <ul class="info__list info__list-language list-reset">
-                            <li class="info__item-language">
-                                <a href="#" class="info__link-language" data-lang="en">
-                                    <img src="img/en.svg" alt="img" width="21" heigth="15" loading="lazy">
-                                    English
-                                </a>    
-                                <img class="info__arrow" src="img/arrow.svg" alt="img" width="12" heigth="12" loading="lazy">
-                                <ul class="info__sub-menu list-reset" >
-                                    <li class="info__sub-item"><a href="#" class="info__sub-link" data-lang="en">
-                                        <img src="img/en.svg" alt="img" width="21" heigth="15" loading="lazy">
-                                        English
-                                    </a></li>
-                                    <li class="info__sub-item"><a href="#" class="info__sub-link" data-lang="ru">
-                                        <img src="img/ru.svg" alt="img" width="21" heigth="15" loading="lazy">
-                                        Russian
-                                    </a></li>
-                                </ul>
-                            </li>
+                          <li class="info__item-language">
+                            <a href="#" class="info__link-language" data-lang="en">
+                              <img src="img/en.svg" alt="English" width="21" height="15" loading="lazy">
+                              <span data-i18n="language.english">English</span>
+                            </a>    
+                            <img class="info__arrow" src="img/arrow.svg" alt="Toggle language menu" width="12" height="12" loading="lazy">
+                            <ul class="info__sub-menu list-reset">
+                              <li class="info__sub-item">
+                                <a href="#" class="info__sub-link" data-lang="en">
+                                  <img src="img/en.svg" alt="English" width="21" height="15" loading="lazy">
+                                  <span data-i18n="language.english">English</span>
+                                </a>
+                              </li>
+                              <li class="info__sub-item">
+                                <a href="#" class="info__sub-link" data-lang="ru">
+                                  <img src="img/ru.svg" alt="Russian" width="21" height="15" loading="lazy">
+                                  <span data-i18n="language.russian">Russian</span>
+                                </a>
+                              </li>
+                            </ul>
+                          </li>
                         </ul>
-                        <div class="info__name btn btn-reset"><p>James</p></div>
-                    </div>
-                    <div class="info__content">
-                        <h3 class="info__title">Balance</h3>
-                        <div class="info__column">
-                            <div class="info__field">
-                                <p class="info__balance info__balance-ru">12378559.43</p>
-                                <img src="img/usdt.svg" alt="img" width="8" heigth="15" loading="lazy">
-                            </div>
-                            <div class="info__field">
-                                <p class="info__balance info__balance-us">18980.93</p>
-                                <img src="img/usdt.svg" alt="img" width="8" heigth="15" loading="lazy">
-                            </div>
-                            <div class="info__field">
-                                <p class="info__balance info__balance-eu">30670.65</p>
-                                <img src="img/euro.svg" alt="img" width="8" heigth="15" loading="lazy">
-                            </div>
+                        <div class="info__name btn btn-reset">
+                          <p>James</p>
                         </div>
-                    </div>
-                    <div class="info__details active">
+                      </div>
+                      <div class="info__content">
+                        <h3 class="info__title" data-i18n="info.balanceTitle">Balance</h3>
+                        <div class="info__column">
+                           <div class="info__field">
+                            <p class="info__balance info__balance-ru">12378559.43</p>
+                            <img src="img/ruble.svg" alt="RUB" width="8" height="15" loading="lazy">
+                          </div>
+                          <div class="info__field">
+                            <p class="info__balance info__balance-us">18980.93</p>
+                            <img src="img/usdt.svg" alt="USD" width="8" height="15" loading="lazy">
+                          </div>
+                          <div class="info__field">
+                            <p class="info__balance info__balance-eu">30670.65</p>
+                            <img src="img/euro.svg" alt="EUR" width="8" height="15" loading="lazy">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="info__details active">
                         <button class="info__button btn-reset">
-                            <span class="info__caption">My details</span>
-                            <span class="info__indicator">
-                                <img src="img/arrow.svg" alt="img" width="8" heigth="8" loading="lazy">
-                            </span>
+                          <span class="info__caption" data-i18n="info.myDetails">My details</span>
+                          <span class="info__indicator">
+                            <img src="img/arrow.svg" alt="Toggle details" width="8" height="8" loading="lazy">
+                          </span>
                         </button>
                         <div class="info__wrapper">
-                            <h4 class="info__subtitle">LandboBank-Online</h4>
-                            <p class="info__text">LandboBank-Online</p>
-                            <h4 class="info__subtitle">Personal code</h4>
-                            <p class="info__text">34091233711</p>
-                            <h4 class="info__subtitle">IBAN</h4>
-                            <p class="info__text">DK127144001434456658</p>
-                            <h4 class="info__subtitle">SWIFT</h4>
-                            <p class="info__text">ABKFDKL1</p>
+                          <h4 class="info__subtitle" data-i18n="info.bankOnline">LandboBank-Online</h4>
+                          <p class="info__text">LandboBank-Online</p>
+                          <h4 class="info__subtitle" data-i18n="info.personalCode">Personal code</h4>
+                          <p class="info__text">34091233711</p>
+                          <h4 class="info__subtitle" data-i18n="info.iban">IBAN</h4>
+                          <p class="info__text">DK127144001434456658</p>
+                          <h4 class="info__subtitle" data-i18n="info.swift">SWIFT</h4>
+                          <p class="info__text">ABKFDKL1</p>
                         </div>
+                      </div>
                     </div>
-                </div>
-               </aside>
+                </aside>
             </main>
         </div>
     </div>
